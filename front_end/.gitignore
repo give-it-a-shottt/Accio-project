@@ -1,0 +1,37 @@
+# 로그 파일
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 의존성 패키지 및 빌드 결과물
+node_modules
+dist
+dist-ssr
+*.local
+
+# 환경 변수 및 시크릿 키 (보안 필수)
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 에디터 및 OS 설정 파일
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 빌드 캐시 파일
+.eslintcache
+*.tsbuildinfo
