@@ -8,24 +8,31 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # 의존성 패키지 및 빌드 결과물
-node_modules
-dist
-dist-ssr
+node_modules/
+dist/
+dist-ssr/
+build/
 *.local
 
 # 환경 변수 및 시크릿 키 (보안 필수)
 .env
-.env.local
-.env.*.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+!.env*.example
+
+# 파이썬 및 백엔드 캐시 (필요 시)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
 
 # 에디터 및 OS 설정 파일
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
@@ -35,3 +42,7 @@ dist-ssr
 # 빌드 캐시 파일
 .eslintcache
 *.tsbuildinfo
+
+# 사용자 추가 제외 폴더
+add_/
+figmaCSS.txt

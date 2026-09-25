@@ -1,0 +1,299 @@
+// ── 피처 배너 assets ─────────────────────────────────────────────────────
+import bannerDiary from "../assets/figma/v3/banners/diary.jpg";
+import bannerHeadphone from "../assets/figma/v3/banners/headphone.jpg";
+import bannerSkincare from "../assets/figma/v3/banners/skincare.jpg";
+import bannerFurniture from "../assets/figma/v3/banners/furniture.jpg";
+import bannerSeason from "../assets/figma/v3/banners/season.jpg";
+
+// ── 숏폼 섹션 assets ─────────────────────────────────────────────────────
+import shortform1 from "../assets/figma/v3/shortform/1.jpg";
+import shortform2 from "../assets/figma/v3/shortform/2.jpg";
+import shortform3 from "../assets/figma/v3/shortform/3.jpg";
+import shortform4 from "../assets/figma/v3/shortform/4.jpg";
+import shortform5 from "../assets/figma/v3/shortform/5.jpg";
+
+// ── 상품 카드 assets (섹션별) ─────────────────────────────────────────────
+import trending1 from "../assets/figma/v3/products/trending-1.jpg";
+import trending2 from "../assets/figma/v3/products/trending-2.jpg";
+import trending3 from "../assets/figma/v3/products/trending-3.jpg";
+import trending4 from "../assets/figma/v3/products/trending-4.jpg";
+import trending5 from "../assets/figma/v3/products/trending-5.jpg";
+import gourmet1 from "../assets/figma/v3/products/gourmet-1.jpg";
+import gourmet2 from "../assets/figma/v3/products/gourmet-2.jpg";
+import gourmet3 from "../assets/figma/v3/products/gourmet-3.jpg";
+import gourmet4 from "../assets/figma/v3/products/gourmet-4.jpg";
+import gourmet5 from "../assets/figma/v3/products/gourmet-5.jpg";
+import digital1 from "../assets/figma/v3/products/digital-1.jpg";
+import digital2 from "../assets/figma/v3/products/digital-2.jpg";
+import digital3 from "../assets/figma/v3/products/digital-3.jpg";
+import digital4 from "../assets/figma/v3/products/digital-4.jpg";
+import digital5 from "../assets/figma/v3/products/digital-5.jpg";
+import living1 from "../assets/figma/v3/products/living-1.jpg";
+import living2 from "../assets/figma/v3/products/living-2.jpg";
+import living3 from "../assets/figma/v3/products/living-3.jpg";
+import living4 from "../assets/figma/v3/products/living-4.jpg";
+import living5 from "../assets/figma/v3/products/living-5.jpg";
+
+// ── 브랜드 섹션 assets ───────────────────────────────────────────────────
+import brandBanner from "../assets/figma/v3/brand/banner.jpg";
+import brandProduct from "../assets/figma/v3/brand/product.jpg";
+
+// ── 상단 유틸리티 바 / 헤더 ──────────────────────────────────────────────
+export const WELCOME_NOTICE = "지금 가입하면 첫 구매 10% 쿠폰 & 무료배송";
+
+export const UTILITY_LINKS = ["로그인/회원가입", "고객센터", "알림", "주문/배송"];
+
+export const HEADER_SEARCH_PLACEHOLDER = "지금인기: 프리미엄 오일, 가을 가구 특가";
+
+export const CART_COUNT = 0;
+
+export const CATEGORIES = [
+  "신상 특가",
+  "뷰티/헬스케어",
+  "디지털/가전",
+  "가구/수납",
+  "패션/잡화",
+  "식품/생필품",
+  "키즈",
+  "도서",
+  "해외직구",
+  "골프/레저",
+  "남성",
+];
+
+// ── AI 검색 히어로 ───────────────────────────────────────────────────────
+export const AI_SEARCH = {
+  title: "찾는 걸 말로 설명해 보세요",
+  subtitle: "ACCIO가 알아서 골라드려요",
+  placeholder: "원하는 물건, 가격대나 분위기 등을 편하게 말씀해보세요",
+  chips: ["10만원 이하 가을 무드 조명", "달달한 제철 과일 추천해줘", "20대 남자친구 가성비 선물, 지갑 말고"],
+};
+
+// ── 피처 배너 ────────────────────────────────────────────────────────────
+export interface FeatureBanner {
+  id: string;
+  image: string;
+  background: string;
+  label: string;
+  labelColor: string;
+  title: string[];
+  description: string;
+}
+
+export const FEATURE_BANNERS: FeatureBanner[] = [
+  {
+    id: "diary",
+    image: bannerDiary,
+    background: "#171717",
+    label: "STATIONERY",
+    labelColor: "#F2641D",
+    title: ["폭신한 털이", "새겨진 다이어리"],
+    description: "포근하고 따뜻한 겨울 다이어리 컬렉션",
+  },
+  {
+    id: "headphone",
+    image: bannerHeadphone,
+    background: "#172554",
+    label: "AUDIO TECH",
+    labelColor: "#38BDF8",
+    title: ["프리미엄 무선", "헤드폰 특가"],
+    description: "노이즈캔슬링, 지금 바로 35% 할인",
+  },
+  {
+    id: "skincare",
+    image: bannerSkincare,
+    background: "#3B0764",
+    label: "BEAUTY POPUP",
+    labelColor: "#F472B6",
+    title: ["피부를 빛나게", "하는 스킨케어"],
+    description: "NEW TOP 10 뷰티 브랜드 팝업스토어",
+  },
+  {
+    id: "furniture",
+    image: bannerFurniture,
+    background: "#1E1B4B",
+    label: "LIVING & ROOM",
+    labelColor: "#A5B4FC",
+    title: ["편안한 집을 위한", "가구 특가"],
+    description: "소파/테이블/침대 최대 50% 할인",
+  },
+  {
+    id: "season",
+    image: bannerSeason,
+    background: "#042F2E",
+    label: "SEASON SPECIAL",
+    labelColor: "#5EEAD4",
+    title: ["활기찬 시즌을 위한", "에센셜 셀렉션"],
+    description: "한정수량 프리오더 오픈",
+  },
+];
+
+// ── 숏폼으로 보는 추천 상품 ────────────────────────────────────────────────
+export interface ShortFormItem {
+  id: string;
+  image: string;
+  /** views: 반투명 조회수 태그, live: 주황 LIVE 태그 */
+  tag: { kind: "views" | "live"; text: string };
+  brand: string;
+  name: string;
+  price: number;
+}
+
+export const SHORTFORM_SECTION = {
+  totalPages: 4,
+  items: [
+    { id: "sf-1", image: shortform1, tag: { kind: "views", text: "1.2만 회 시청" }, brand: "라움클래스", name: "스카프 타이 실크 블라우스 - 베이지", price: 37500 },
+    { id: "sf-2", image: shortform2, tag: { kind: "live", text: "LIVE 특가" }, brand: "클래식무드", name: "소프트 웜 크림 자켓 테일러드 셋업", price: 129000 },
+    { id: "sf-3", image: shortform3, tag: { kind: "views", text: "8.5천 회 시청" }, brand: "누아리스튜디오", name: "울 카멜 블렌드 핏 싱글 자켓", price: 89000 },
+    { id: "sf-4", image: shortform4, tag: { kind: "views", text: "2.4만 회 시청" }, brand: "라세레", name: "스트레이트 데님 & 베이지 슬랙스 코디", price: 98000 },
+    { id: "sf-5", image: shortform5, tag: { kind: "views", text: "4.1천 회 시청" }, brand: "라세레", name: "오버사이즈핏 테일러드 블레이저", price: 98000 },
+  ] as ShortFormItem[],
+};
+
+// ── 상품 캐러셀 섹션 ─────────────────────────────────────────────────────
+export interface TitleSegment {
+  text: string;
+  highlight?: boolean;
+}
+
+/** gray: 기본 회색 배지, accent/accentStrong: 주황 강조 배지 (배경 농도만 다름) */
+export type BadgeTone = "gray" | "accent" | "accentStrong";
+
+export interface Product {
+  id: string;
+  image: string;
+  store: string;
+  name: string;
+  listPrice: number;
+  discountRate: number;
+  price: number;
+  badge: { text: string; tone?: BadgeTone };
+  /** 시안에서 상품명이 Noto Sans KR 12/16 으로 들어간 카드 */
+  notoName?: boolean;
+  /** 시안의 흰 배경 + 4px 안쪽 여백 강조 카드 */
+  highlighted?: boolean;
+}
+
+export interface ProductSectionData {
+  id: string;
+  title: TitleSegment[];
+  /** 제목 조각 사이 간격(px). 조각이 붙어 있는 제목은 0 */
+  titleGap: number;
+  subtitle: string;
+  /** 부제 글자 크기 (시안 기준 12 또는 13) */
+  subtitleSize: 12 | 13;
+  /** 시안에서 헤더 하단 여백(12px) 없이 구분선이 바로 붙는 섹션 */
+  compactHeader?: boolean;
+  products: Product[];
+}
+
+export const TRENDING_SECTION: ProductSectionData = {
+  id: "trending",
+  title: [{ text: "지금 관심도" }, { text: "급상승", highlight: true }, { text: "중인 상품" }],
+  titleGap: 6,
+  subtitle: "실시간으로 소비자들이 가장 많이 장바구니에 담고 있어요",
+  subtitleSize: 12,
+  compactHeader: true,
+  products: [
+    { id: "trending-1", image: trending1, store: "프리미엄마켓", name: "숙성 프라임 립아이스테이크 400g", listPrice: 50000, discountRate: 20, price: 39900, badge: { text: "무료배송" } },
+    { id: "trending-2", image: trending2, store: "이탈리안밀", name: "생트러플 엔젤 헤어 파스타 밀키트", listPrice: 25500, discountRate: 18, price: 20800, badge: { text: "쿠폰적용" }, notoName: true },
+    { id: "trending-3", image: trending3, store: "아티잔베이커스", name: "프랑스 천연 발효 크루아상 8입", listPrice: 28600, discountRate: 23, price: 22000, badge: { text: "무료배송" }, notoName: true },
+    { id: "trending-4", image: trending4, store: "디지털플레이어", name: "초슬림 알루미늄 울트라북 15.6인치", listPrice: 1720000, discountRate: 11, price: 1499000, badge: { text: "ACCIO 단독", tone: "accent" }, notoName: true },
+    { id: "trending-5", image: trending5, store: "픽셀온", name: "27인치 165Hz IPS 게이밍 모니터", listPrice: 399000, discountRate: 18, price: 329000, badge: { text: "무료배송" }, notoName: true },
+  ],
+};
+
+export const GOURMET_SECTION: ProductSectionData = {
+  id: "gourmet",
+  title: [{ text: "미식가", highlight: true }, { text: "들이 찾는 오늘의 추천" }],
+  titleGap: 0,
+  subtitle: "엄선된 신선 식재료부터 셰프의 시크릿 밀키트까지",
+  subtitleSize: 13,
+  products: [
+    { id: "gourmet-1", image: gourmet1, store: "프리미엄마켓", name: "초신선 채끝 스테이크 시즈닝 팩", listPrice: 50000, discountRate: 20, price: 39900, badge: { text: "새벽배송" }, notoName: true },
+    { id: "gourmet-2", image: gourmet2, store: "이탈리안밀", name: "바질 페스토 파케리 파스타 세트", listPrice: 25500, discountRate: 18, price: 20800, badge: { text: "냉장포장" }, notoName: true },
+    { id: "gourmet-3", image: gourmet3, store: "아티잔베이커스", name: "발효 버터 크루아상 생지 세트", listPrice: 28600, discountRate: 23, price: 22000, badge: { text: "당일발송" }, notoName: true },
+    { id: "gourmet-4", image: gourmet4, store: "오션프레시", name: "노르웨이 생연어 스테이크 필렛 500g", listPrice: 43000, discountRate: 19, price: 34900, badge: { text: "새벽배송" }, notoName: true },
+    { id: "gourmet-5", image: gourmet5, store: "프루츠샤인", name: "제철 프리미엄 샤인&애플 선물세트", listPrice: 69000, discountRate: 14, price: 59000, badge: { text: "특가할인", tone: "accentStrong" }, notoName: true, highlighted: true },
+  ],
+};
+
+export const DIGITAL_SECTION: ProductSectionData = {
+  id: "digital",
+  title: [{ text: "일상을 업그레이드하는" }, { text: "디지털 PICK", highlight: true }],
+  titleGap: 6,
+  subtitle: "스마트한 라이프스타일을 위한 IT 기기 모음전",
+  subtitleSize: 12,
+  products: [
+    { id: "digital-1", image: digital1, store: "디지털플레이어", name: "초슬림 알루미늄 슬림북 15", listPrice: 1720000, discountRate: 11, price: 1499000, badge: { text: "무료배송" } },
+    { id: "digital-2", image: digital2, store: "픽셀온", name: "27인치 165Hz 광시야각 모니터", listPrice: 399000, discountRate: 18, price: 329000, badge: { text: "당일배송" } },
+    { id: "digital-3", image: digital3, store: "키노바 (KEYNOVA)", name: "레트로 커스텀 기계식 무선키보드", listPrice: 189000, discountRate: 21, price: 149000, badge: { text: "무료배송" } },
+    { id: "digital-4", image: digital4, store: "MINIX", name: "초소형 홈 오피스 미니 PC", listPrice: 809000, discountRate: 13, price: 699000, badge: { text: "안전포장" } },
+    { id: "digital-5", image: digital5, store: "네오마우스", name: "인체공학형 무소음 무선 마우스", listPrice: 89000, discountRate: 22, price: 69000, badge: { text: "무료배송" } },
+  ],
+};
+
+export const LIVING_SECTION: ProductSectionData = {
+  id: "living",
+  title: [{ text: "집을 바꾸는" }, { text: "홈&리빙", highlight: true }, { text: "셀렉션" }],
+  titleGap: 6,
+  subtitle: "머무르고 싶은 공간을 위한 감성 가구와 소품",
+  subtitleSize: 12,
+  products: [
+    { id: "living-1", image: living1, store: "크레마랩", name: "반자동 에스프레소 머신 화이트", listPrice: 699000, discountRate: 14, price: 599000, badge: { text: "무료배송" } },
+    { id: "living-2", image: living2, store: "더룸 라이프", name: "패브릭 모듈러 로우 소파", listPrice: 460000, discountRate: 20, price: 369000, badge: { text: "설치배송" } },
+    { id: "living-3", image: living3, store: "루미에르", name: "선셋 글라스 앰비언트 테이블 램프", listPrice: 128000, discountRate: 22, price: 99000, badge: { text: "무료배송" } },
+    { id: "living-4", image: living4, store: "세렌데코", name: "순면 80수 호텔 베딩 풀세트 (Q)", listPrice: 218000, discountRate: 18, price: 178000, badge: { text: "선물포장" } },
+    { id: "living-5", image: living5, store: "에어웰", name: "타워형 헤파필터 무소음 공기청정기", listPrice: 549000, discountRate: 16, price: 459000, badge: { text: "무료배송" } },
+  ],
+};
+
+// ── 주목해야 할 브랜드 ───────────────────────────────────────────────────
+export interface BrandProduct {
+  id: string;
+  image: string;
+  name: string;
+  listPrice?: number;
+  price: number;
+  tags: { text: string; tone: "sale" | "today" }[];
+}
+
+export const BRAND_SECTION = {
+  title: "주목해야 할 브랜드",
+  brands: ["페리페라", "리스키", "티르티르", "제로이드", "로라메르시에", "블랑두스", "VT", "아렌시아", "아비브", "레이어랩"],
+  banner: brandBanner,
+  likes: 31099,
+  products: [
+    {
+      id: "brand-1",
+      image: brandProduct,
+      name: "[곡물라떼 컬러 NEW] 페리페라 무드 글로이 틴트 32 Colors",
+      listPrice: 13000,
+      price: 9300,
+      tags: [
+        { text: "세일", tone: "sale" },
+        { text: "오늘드림", tone: "today" },
+      ],
+    },
+    {
+      id: "brand-2",
+      image: brandProduct,
+      name: "페리페라 스피디 스키니 브로우 8 Colors",
+      price: 6000,
+      tags: [{ text: "오늘드림", tone: "today" }],
+    },
+  ] as BrandProduct[],
+};
+
+// ── 푸터 ─────────────────────────────────────────────────────────────────
+export const FOOTER_DESCRIPTION = ["ACCIO는 고객이 꿈꾸는 모든 상품을 빠르고 찾아주는 감", "각 중심 커머스 플랫폼입니다."];
+
+export const FOOTER_LINK_GROUPS = [
+  { title: "고객센터", links: [{ label: "공지사항" }, { label: "자주 묻는 질문" }, { label: "1:1 문의" }, { label: "제휴/광고 문의" }] },
+  { title: "회사", links: [{ label: "회사소개" }, { label: "채용정보" }, { label: "개인정보처리방침", emphasis: true }, { label: "서비스이용약관" }] },
+  { title: "서비스", links: [{ label: "품질보증" }, { label: "안전결제" }, { label: "멤버십" }, { label: "공지사항" }] },
+];
+
+export const FOOTER_COPYRIGHT = "© 2024 ACCIO Inc. All rights reserved.";
+
+export const FOOTER_LEGAL = ["(주) 아씨오 커머스", "사업자등록번호: 120-81-00000", "통신판매업신고: 제2024-서울강남-0000호"];
