@@ -45,30 +45,30 @@ export default function FeatureBanners({ banners }: FeatureBannersProps) {
       <div
         ref={trackRef}
         onScroll={handleScroll}
-        className={`scrollbar-none flex w-full snap-x snap-mandatory gap-3.5 overflow-x-auto lg:justify-center ${BLEED_CLASS}`}
+        className={`scrollbar-none flex w-full snap-x snap-mandatory gap-3 overflow-x-auto sm:gap-4 lg:justify-center ${BLEED_CLASS}`}
       >
         {ordered.map((banner) => (
           <article
             key={banner.id}
-            className="relative h-64 w-[72%] shrink-0 snap-start overflow-hidden rounded-2xl shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] sm:w-[44%] md:w-[31%] lg:w-auto lg:min-w-0 lg:flex-1 lg:shrink"
+            className="relative h-64 w-[72%] shrink-0 snap-start overflow-hidden rounded-card shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] sm:w-[44%] md:w-[31%] lg:w-auto lg:min-w-0 lg:flex-1 lg:shrink"
             style={{ background: banner.background }}
           >
             <img src={banner.image} alt="" className="absolute inset-0 size-full object-cover opacity-75" />
-            <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-[rgba(0,0,0,0.85)] via-[rgba(0,0,0,0.3)] to-transparent p-4 font-noto">
+            <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-[rgba(0,0,0,0.85)] via-[rgba(0,0,0,0.3)] to-transparent p-4">
               <p
-                className="pb-1 text-[10px] leading-[15px] font-bold tracking-[0.5px] uppercase"
+                className="pb-1 text-12 font-semibold tracking-normal uppercase"
                 style={{ color: banner.labelColor }}
               >
                 {banner.label}
               </p>
-              <h3 className="pb-1 text-base leading-5 font-bold tracking-noto whitespace-nowrap text-white drop-shadow-[0px_1px_0.5px_rgba(0,0,0,0.05)]">
+              <h3 className="pb-1.5 text-16 font-semibold whitespace-nowrap text-white drop-shadow-[0px_1px_0.5px_rgba(0,0,0,0.05)]">
                 {banner.title.map((line) => (
                   <span key={line} className="block">
                     {line}
                   </span>
                 ))}
               </h3>
-              <p className="truncate text-[11px] leading-[16.5px] font-light tracking-noto text-[#D1D5DB]">{banner.description}</p>
+              <p className="truncate text-12 text-[#D1D5DB]">{banner.description}</p>
             </div>
           </article>
         ))}
@@ -76,13 +76,13 @@ export default function FeatureBanners({ banners }: FeatureBannersProps) {
 
       <div className="flex items-center justify-center">
         <button type="button" aria-label="이전 배너" onClick={() => move(-1)}>
-          <img src={chevronLeft} alt="" className="size-3.5" />
+          <img src={chevronLeft} alt="" className="size-4" />
         </button>
-        <span className="pl-3 font-mono text-[11px] leading-4 tracking-noto whitespace-nowrap text-[#4B5563]">
+        <span className="pl-3 text-11 tracking-normal tabular-nums whitespace-nowrap text-sub">
           {((start + scrolled) % count) + 1} / {count}
         </span>
         <button type="button" aria-label="다음 배너" onClick={() => move(1)} className="ml-3">
-          <img src={chevronRight} alt="" className="size-3.5" />
+          <img src={chevronRight} alt="" className="size-4" />
         </button>
       </div>
     </section>
