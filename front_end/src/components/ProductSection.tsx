@@ -9,7 +9,7 @@ interface ProductSectionProps {
   section: ProductSectionData
 }
 
-const ARROW_CLASS = 'flex size-7 items-center justify-center rounded-full border border-[#E5E7EB]'
+const ARROW_CLASS = 'flex size-7 items-center justify-center rounded-full border border-regular'
 
 export default function ProductSection({ section }: ProductSectionProps) {
   const trackRef = useRef<HTMLDivElement>(null)
@@ -22,33 +22,26 @@ export default function ProductSection({ section }: ProductSectionProps) {
   return (
     <section className="flex w-full flex-col gap-4">
       <div
-        className={`flex items-end justify-between border-b border-[#F3F4F6] ${section.compactHeader ? '' : 'pb-3'}`}
+        className={`flex items-end justify-between border-b border-light ${section.compactHeader ? '' : 'pb-3'}`}
       >
-        <div className="flex min-w-0 flex-col gap-0.5">
-          <h2
-            className="flex flex-wrap items-center text-lg leading-[1.4] font-semibold tracking-kr text-[#111111] sm:text-xl"
-            style={{ gap: section.titleGap }}
-          >
+        <div className="flex min-w-0 flex-col gap-2">
+          <h2 className="text-18 font-semibold text-main sm:text-20">
             {section.title.map((segment) => (
               <span key={segment.text} className={segment.highlight ? 'text-accent' : undefined}>
                 {segment.text}
               </span>
             ))}
           </h2>
-          <p
-            className={`leading-[1.45] tracking-kr text-[#767676] ${section.subtitleSize === 13 ? 'text-[13px]' : 'text-xs'}`}
-          >
-            {section.subtitle}
-          </p>
+          <p className="text-14 text-sub">{section.subtitle}</p>
         </div>
 
         {/* md 미만은 스와이프로 넘기므로 화살표를 숨긴다 */}
-        <div className="hidden shrink-0 items-center gap-1.5 md:flex">
+        <div className="hidden shrink-0 items-center gap-2 md:flex">
           <button type="button" aria-label="이전 상품" onClick={() => scrollRow(-1)} className={ARROW_CLASS}>
-            <img src={arrowLeft} alt="" className="size-3.5" />
+            <img src={arrowLeft} alt="" className="size-4" />
           </button>
           <button type="button" aria-label="다음 상품" onClick={() => scrollRow(1)} className={ARROW_CLASS}>
-            <img src={arrowRight} alt="" className="size-3.5" />
+            <img src={arrowRight} alt="" className="size-4" />
           </button>
         </div>
       </div>

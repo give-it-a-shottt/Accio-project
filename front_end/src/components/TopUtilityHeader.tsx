@@ -3,19 +3,17 @@ import Container from './Container'
 
 export default function TopUtilityHeader() {
   return (
-    <div className="border-b border-[#F3F4F6] bg-white">
+    <div className="border-b border-light bg-white">
       <Container className="flex h-9 items-center justify-end gap-4 md:justify-between">
-        <p className="hidden min-w-0 truncate text-xs leading-[1.45] tracking-kr text-[#505050] md:block">{WELCOME_NOTICE}</p>
+        <p className="hidden min-w-0 truncate text-12 text-sub md:block">{WELCOME_NOTICE}</p>
 
         <nav className="flex shrink-0 items-center">
           {UTILITY_LINKS.map((label, i) => (
             <div key={label} className="flex items-center">
               {i > 0 && (
-                <span className="px-2.5 sm:px-4 font-noto text-xs leading-4 tracking-noto text-[#E5E7EB]" aria-hidden="true">
-                  |
-                </span>
+                <span className="mx-3 h-3 border-l border-regular sm:mx-4" aria-hidden="true" />
               )}
-              <a href="#" className="text-xs leading-[1.45] tracking-kr whitespace-nowrap text-[#505050]">
+              <a href={label === '로그인/회원가입' ? '#/login' : '#'} className="text-12 whitespace-nowrap text-sub">
                 {label}
               </a>
             </div>
