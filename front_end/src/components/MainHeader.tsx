@@ -9,7 +9,7 @@ export default function MainHeader() {
     <header className="border-b border-regular bg-white/95 px-4 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] backdrop-blur-[6px] sm:px-6 lg:px-10">
       {/* md 미만에서는 검색창이 두 번째 줄 전체 폭으로 내려간다 */}
       <div className="mx-auto flex w-full max-w-[1200px] flex-wrap items-center gap-y-3 py-3 md:h-16 md:flex-nowrap md:py-0 lg:pl-4">
-        <a href="/" className="shrink-0">
+        <a href="#/home" className="shrink-0">
           <img src={logo} alt="Accio" className="h-7 w-auto" />
         </a>
 
@@ -19,7 +19,7 @@ export default function MainHeader() {
             Ranking
           </a>
           <a
-            href="#"
+            href="#/cart"
             className="ml-2 flex items-center gap-1 rounded-full border border-light bg-light p-1 text-13 font-medium whitespace-nowrap text-main"
           >
             <img src={bagIcon} alt="" className="size-4" />

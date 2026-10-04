@@ -21,7 +21,11 @@ export default function AiSearchHero() {
 
       <form
         role="search"
-        onSubmit={(e) => e.preventDefault()}
+        onSubmit={(e) => {
+          e.preventDefault();
+          // 목업이라 검색어와 상관없이 정해진 대화 결과 화면으로 간다
+          window.location.hash = "/ai";
+        }}
         className="flex h-13 w-full items-center rounded-full border-2 border-accent/20 bg-white px-5 shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)]">
         <input
           type="text"

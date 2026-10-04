@@ -1,6 +1,8 @@
 import { useEffect } from "react";
+import AiChatPage from "./components/AiChatPage";
 import AiSearchHero from "./components/AiSearchHero";
 import BrandSection from "./components/BrandSection";
+import CartPage from "./components/CartPage";
 import CategoryNav from "./components/CategoryNav";
 import Container from "./components/Container";
 import DetailPage from "./components/DetailPage";
@@ -9,8 +11,12 @@ import Footer from "./components/Footer";
 import ListPage from "./components/ListPage";
 import LoginPage from "./components/LoginPage";
 import MainHeader from "./components/MainHeader";
+import MyPage from "./components/MyPage";
+import OrderTrackingPage from "./components/OrderTrackingPage";
+import PortfolioApp from "./components/portfolio/PortfolioApp";
 import ProductSection from "./components/ProductSection";
 import ShortFormSection from "./components/ShortFormSection";
+import SupportPage from "./components/SupportPage";
 import TopUtilityHeader from "./components/TopUtilityHeader";
 import {
   DIGITAL_SECTION,
@@ -29,9 +35,18 @@ function App() {
     window.scrollTo(0, 0);
   }, [route]);
 
+  // 첫 화면은 검색형 포트폴리오('#/', '#/search?q=…'), 쇼핑몰 홈은 '#/home' (그 밖의 주소도 홈으로 보낸다)
+  const [path, search = ""] = route.split("?");
+  if (path === "/" || path === "/search")
+    return <PortfolioApp path={path} params={new URLSearchParams(search)} />;
   if (route === "/login") return <LoginPage />;
   if (route === "/list") return <ListPage />;
   if (route === "/detail") return <DetailPage />;
+  if (route === "/ai") return <AiChatPage />;
+  if (route === "/cart") return <CartPage />;
+  if (route === "/mypage") return <MyPage />;
+  if (route === "/order") return <OrderTrackingPage />;
+  if (route === "/support") return <SupportPage />;
 
   return (
     <div className="flex min-h-svh flex-col bg-white">

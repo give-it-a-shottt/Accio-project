@@ -7,6 +7,7 @@ import shieldIcon from '../assets/figma/v3/icons/shield.svg'
 import { PRODUCT_DETAIL } from '../data/mock'
 import CategoryNav from './CategoryNav'
 import MainHeader from './MainHeader'
+import ReviewSection from './ReviewSection'
 import TopUtilityHeader from './TopUtilityHeader'
 
 const formatWon = (value: number) => `${value.toLocaleString('ko-KR')}원`
@@ -199,8 +200,10 @@ export default function DetailPage() {
                 alt={`${name} 상세정보`}
                 className="block h-auto w-full"
               />
+            ) : tab === TABS[1] ? (
+              <ReviewSection />
             ) : (
-              // 리뷰·문의·배송/교환 탭은 시안이 없어 빈 상태만 보여준다
+              // 문의·배송/교환 탭은 시안이 없어 빈 상태만 보여준다
               <p className="py-20 text-center text-14 text-sub-weak">{tab.split(' ')[0]} 내용을 준비 중이에요</p>
             )}
           </div>

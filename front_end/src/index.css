@@ -82,6 +82,18 @@
 
   /* Accent — 서비스 포인트 컬러 (문서의 (임시) 값 대신 주황 유지) */
   --color-accent: #f2641d;
+  /* 문서의 Primary Soft 자리 — 포인트 태그 배경. 그 위 글자는 대비 4.5:1 을 맞추려 accent 를 어둡게 쓴다 */
+  --color-accent-soft: #fff1e8;
+  --color-accent-strong: #b8470f;
+  /* 포트폴리오(개인 브랜드) 포인트 — MyDesign.md Primary. Accio 의 주황과 구분한다 */
+  --color-portfolio: #2563eb;
+  --color-portfolio-soft: #eff4ff;
+
+  /* Neutral — icon (text-icon-main …) */
+  --color-icon-main: #2a2a37;
+  --color-icon-sub: #545461;
+  --color-icon-sub-weak: #81818d;
+  --color-icon-disabled: #a5a5af;
 
   /* 라운드: 카드 안 썸네일은 카드 라운드 -4. 알약형은 rounded-full (기본 라운드 유틸리티는 제거) */
   --radius-*: initial;
