@@ -26,6 +26,8 @@ __pycache__/
 *$py.class
 venv/
 .venv/
+.pytest_cache/
+.ruff_cache/
 
 # 에디터 및 OS 설정 파일
 .vscode/*

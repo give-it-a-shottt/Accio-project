@@ -1,0 +1,17 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: accio
+      POSTGRES_PASSWORD: accio
+      POSTGRES_DB: accio
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U accio -d accio"]
+      interval: 5s
+      retries: 5
+volumes:
+  pgdata:
