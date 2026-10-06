@@ -1,17 +1,14 @@
 import { CASES, KEYWORDS, matchesQuery, type PortfolioCase } from '../../data/portfolio'
 import { SearchIcon } from '../icons'
+import CaseMeta from './CaseMeta'
 import { searchHref, type ResultTab } from './routes'
 
 const TABS: { tab: ResultTab; label: string }[] = [
   { tab: 'all', label: '전체' },
   { tab: 'front', label: 'Front' },
   { tab: 'back', label: 'Back' },
+  { tab: 'design', label: 'Design' },
 ]
-
-const TYPE_BADGE_CLASS = {
-  Back: 'bg-portfolio-soft text-portfolio',
-  Front: 'bg-regular text-icon-main',
-}
 
 function KeywordChips({ exclude }: { exclude?: string }) {
   return (
@@ -35,16 +32,7 @@ function ResultRow({ item }: { item: PortfolioCase }) {
   return (
     <li className="relative flex gap-6 border-b border-light py-6">
       <div className="flex min-w-0 flex-1 flex-col">
-        <p className="flex items-center gap-2 text-13 tracking-normal text-sub-weak">
-          <span lang="en" className={`rounded-badge px-2 py-0.5 text-12 font-semibold ${TYPE_BADGE_CLASS[item.type]}`}>
-            {item.type}
-          </span>
-          <span lang="en" className="font-medium">
-            {item.code}
-          </span>
-          <span aria-hidden="true">·</span>
-          <span>{item.date}</span>
-        </p>
+        <CaseMeta item={item} />
         <h2 className="mt-2 text-18 font-semibold break-keep text-main sm:text-20">
           {item.href ? (
             <a href={item.href} className="hover:text-portfolio after:absolute after:inset-0">
@@ -70,7 +58,8 @@ function ResultRow({ item }: { item: PortfolioCase }) {
         </p>
       </div>
 
-      {item.type === 'Front' && (
+      {/* 화면이 있는 사례(Front·Design)만 썸네일을 둔다 */}
+      {item.type !== 'Back' && (
         <div className="hidden h-28 w-40 shrink-0 overflow-hidden rounded-thumb border border-regular sm:block">
           {item.image ? (
             <img src={item.image} alt="" className="size-full object-cover object-top" />
@@ -97,6 +86,7 @@ export default function SearchResults({ query, tab }: SearchResultsProps) {
     all: matched.length,
     front: matched.filter((item) => item.type === 'Front').length,
     back: matched.filter((item) => item.type === 'Back').length,
+    design: matched.filter((item) => item.type === 'Design').length,
   }
   const results = tab === 'all' ? matched : matched.filter((item) => item.type.toLowerCase() === tab)
   const related = KEYWORDS.filter(({ label }) => label !== query).slice(0, 5)

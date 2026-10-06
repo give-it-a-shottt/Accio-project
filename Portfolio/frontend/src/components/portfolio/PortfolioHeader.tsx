@@ -8,6 +8,7 @@ export const LOGO_LAYOUT_ID = 'jsh-logo'
 const NAV: { tab: Exclude<ResultTab, 'all'>; label: string }[] = [
   { tab: 'front', label: 'Front' },
   { tab: 'back', label: 'Back' },
+  { tab: 'design', label: 'Design' },
 ]
 
 interface PortfolioHeaderProps {
@@ -16,7 +17,7 @@ interface PortfolioHeaderProps {
   activeTab?: ResultTab
 }
 
-// 로고 · (결과 화면) 검색창 · Front/Back 바로가기. md 미만에서는 검색창이 두 번째 줄로 내려간다.
+// 로고 · (결과 화면) 검색창 · Front/Back/Design 바로가기. md 미만에서는 검색창이 두 번째 줄로 내려간다.
 export default function PortfolioHeader({ search, activeTab = 'all' }: PortfolioHeaderProps) {
   return (
     <header className="flex flex-wrap items-center justify-between gap-x-6 gap-y-4 px-5 py-5 sm:px-10">

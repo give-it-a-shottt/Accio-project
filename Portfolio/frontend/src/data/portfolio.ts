@@ -1,9 +1,31 @@
 import accioHome from '../assets/portfolio/home.png'
+import stayLoginV1 from '../assets/portfolio/design/stay-login/v1.png'
+import stayLoginV2 from '../assets/portfolio/design/stay-login/v2.png'
+import stayLoginV3 from '../assets/portfolio/design/stay-login/v3.png'
 
 // 검색형 포트폴리오 데이터 — 기준: 「검색형 포트폴리오 구상안」 Search Portfolio.dc.html
 // Accio 를 뺀 사례·지표는 시안의 예시 값이다. 실제 사례를 정리하면 여기서 바꾼다.
 
-export type CaseType = 'Front' | 'Back'
+export type CaseType = 'Front' | 'Back' | 'Design'
+
+/** Design 사례의 시안 한 장 */
+export interface DesignVariant {
+  label: string
+  image: string
+  /** 이 안에서 바꾼 점·이유 한 줄 */
+  note: string
+}
+
+/** Design 사례 — 같은 화면을 여러 안으로 고친 과정. 최종안은 실제 동작하는 데모로 함께 보여준다 */
+export interface DesignCase {
+  /** 어떤 서비스의 화면인지 */
+  app: string
+  /** 처음 시안에서 느낀 문제 */
+  problem: string
+  variants: DesignVariant[]
+  /** variants 중 최종안의 위치 */
+  finalIndex: number
+}
 
 export interface PortfolioCase {
   slug: string
@@ -20,9 +42,38 @@ export interface PortfolioCase {
   image?: string
   /** 눌렀을 때 갈 곳. 없으면 링크 없이 보여준다 */
   href?: string
+  /** type 이 'Design' 인 사례의 시안 비교 */
+  design?: DesignCase
 }
 
 export const CASES: PortfolioCase[] = [
+  {
+    slug: 'stay-login',
+    type: 'Design',
+    code: 'DESIGN 01',
+    date: '2026.10',
+    title: '숙박 예약 앱 로그인 화면 3안 개선',
+    description: '소셜 로그인이 먼저 보여 아이디 로그인 동선이 길던 첫 시안을 3안까지 다듬고, 최종안을 실제 동작하는 화면으로 구현.',
+    metrics: [
+      { label: '시안', value: '3안' },
+      { label: '최종', value: '3안 구현' },
+    ],
+    tags: ['Figma', 'React', 'Tailwind'],
+    keywords: '로그인 숙박 예약 앱 소셜 로그인 UI 개선 피그마 accio 디자인',
+    image: stayLoginV3,
+    href: '#/case/stay-login',
+    design: {
+      app: 'Accio — 저장한 여행지를 모아 보고 숙소를 예약하는 앱 (개인 콘셉트)',
+      problem:
+        '첫 시안은 소셜 로그인이 맨 위에 있어 아이디로 로그인하는 사용자가 한 번 더 내려가야 했고, 둥근 입력창과 버튼이 비슷해 보여 무엇을 눌러야 할지 흐렸다.',
+      variants: [
+        { label: '1안', image: stayLoginV1, note: '소셜 로그인을 맨 위에 두고 입력창·버튼을 모두 둥근 알약 모양으로 맞춘 첫 시안' },
+        { label: '2안', image: stayLoginV2, note: '아이디 로그인을 주 동선으로 보고 위로 올림. 입력창을 각지게 바꿔 버튼과 구분' },
+        { label: '3안', image: stayLoginV3, note: '로그인 버튼이 어두운 배경에 묻혀 파란색으로 강조하고, 로고를 원형 심볼로 정리' },
+      ],
+      finalIndex: 2,
+    },
+  },
   {
     slug: 'accio',
     type: 'Front',
@@ -159,6 +210,7 @@ export const KEYWORDS: { label: string; type: CaseType }[] = [
   { label: '메시지 큐', type: 'Back' },
   { label: '성능 개선', type: 'Front' },
   { label: '디자인 시스템', type: 'Front' },
+  { label: '로그인 화면', type: 'Design' },
 ]
 
 // ── 검색 ────────────────────────────────────────────────────────────────

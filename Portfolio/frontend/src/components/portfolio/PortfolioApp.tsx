@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { AnimatePresence, LayoutGroup, motion } from 'motion/react'
+import DesignCaseDetail from './DesignCaseDetail'
 import { EASE_OUT } from './motion'
 import PortfolioHeader from './PortfolioHeader'
 import PortfolioHero from './PortfolioHero'
@@ -29,14 +30,16 @@ function markIntroSeen() {
 }
 
 interface PortfolioAppProps {
-  /** '/' = 검색 홈, '/search' = 결과 */
-  path: '/' | '/search'
+  /** '/' = 검색 홈, '/search' = 결과, '/case' = 사례 상세 */
+  path: '/' | '/search' | '/case'
   params: URLSearchParams
+  /** path 가 '/case' 일 때 보여줄 사례 */
+  slug?: string
 }
 
-// 검색형 포트폴리오 — 인트로(첫 방문) → 검색 홈 → 결과. 검색어와 탭은 주소에 남겨 공유·뒤로가기가 되게 한다.
-export default function PortfolioApp({ path, params }: PortfolioAppProps) {
-  // 결과 주소로 바로 들어온 경우에는 인트로를 보여주지 않는다
+// 검색형 포트폴리오 — 인트로(첫 방문) → 검색 홈 → 결과 → 사례 상세. 검색어와 탭은 주소에 남겨 공유·뒤로가기가 되게 한다.
+export default function PortfolioApp({ path, params, slug = '' }: PortfolioAppProps) {
+  // 결과·상세 주소로 바로 들어온 경우에는 인트로를 보여주지 않는다
   const [introPlaying, setIntroPlaying] = useState(() => path === '/' && shouldPlayIntro())
   const query = params.get('q') ?? ''
   const tab = readTab(params.get('tab'))
@@ -80,8 +83,17 @@ export default function PortfolioApp({ path, params }: PortfolioAppProps) {
 
       {!introPlaying && (
         <div className="flex min-h-svh flex-col bg-white">
-          <PortfolioHeader search={isResults ? { query, onSearch: search } : undefined} activeTab={isResults ? tab : 'all'} />
-          {isResults ? <SearchResults query={query} tab={tab} /> : <SearchHome onSearch={search} />}
+          <PortfolioHeader
+            search={isResults ? { query, onSearch: search } : undefined}
+            activeTab={isResults ? tab : path === '/case' ? 'design' : 'all'}
+          />
+          {path === '/case' ? (
+            <DesignCaseDetail slug={slug} />
+          ) : isResults ? (
+            <SearchResults query={query} tab={tab} />
+          ) : (
+            <SearchHome onSearch={search} />
+          )}
         </div>
       )}
     </LayoutGroup>

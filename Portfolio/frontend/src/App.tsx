@@ -35,10 +35,13 @@ function App() {
     window.scrollTo(0, 0);
   }, [route]);
 
-  // 첫 화면은 검색형 포트폴리오('#/', '#/search?q=…'), 쇼핑몰 홈은 '#/home' (그 밖의 주소도 홈으로 보낸다)
+  // 첫 화면은 검색형 포트폴리오('#/', '#/search?q=…', '#/case/…'), 쇼핑몰 홈은 '#/home' (그 밖의 주소도 홈으로 보낸다)
   const [path, search = ""] = route.split("?");
   if (path === "/" || path === "/search")
     return <PortfolioApp path={path} params={new URLSearchParams(search)} />;
+  // 사례 상세 '#/case/{slug}'
+  if (path.startsWith("/case/"))
+    return <PortfolioApp path="/case" params={new URLSearchParams(search)} slug={path.slice("/case/".length)} />;
   if (route === "/login") return <LoginPage />;
   if (route === "/list") return <ListPage />;
   if (route === "/detail") return <DetailPage />;

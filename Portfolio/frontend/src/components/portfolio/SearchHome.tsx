@@ -4,6 +4,13 @@ import { EASE_OUT } from './motion'
 import { searchHref } from './routes'
 import SearchBox from './SearchBox'
 
+// 키워드 칩 앞 점 — Back 은 포인트 파랑, Front 는 회색, Design 은 주황
+const TYPE_DOT_CLASS = {
+  Back: 'bg-portfolio',
+  Front: 'bg-icon-disabled',
+  Design: 'bg-accent',
+}
+
 interface SearchHomeProps {
   onSearch: (query: string) => void
 }
@@ -51,8 +58,7 @@ export default function SearchHome({ onSearch }: SearchHomeProps) {
                   href={searchHref(label)}
                   className="flex items-center gap-2 rounded-full border border-regular bg-white px-4 py-2 text-14 font-medium text-main hover:border-black hover:bg-light"
                 >
-                  {/* Back 은 포인트 파랑, Front 는 회색 점 */}
-                  <span aria-hidden="true" className={`size-1.5 rounded-full ${type === 'Back' ? 'bg-portfolio' : 'bg-icon-disabled'}`} />
+                  <span aria-hidden="true" className={`size-1.5 rounded-full ${TYPE_DOT_CLASS[type]}`} />
                   {label}
                   <span className="sr-only">({type})</span>
                 </a>
