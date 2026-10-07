@@ -1,4 +1,4 @@
-import type { PortfolioCase } from '../../data/portfolio'
+import type { PortfolioCase } from './data'
 
 const TYPE_BADGE_CLASS = {
   Back: 'bg-portfolio-soft text-portfolio',

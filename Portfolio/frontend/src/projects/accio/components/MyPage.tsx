@@ -1,9 +1,10 @@
 import { DIGITAL_SECTION, MY_PAGE, type OrderStatus } from '../data/mock'
 import { formatCount, formatWon } from '../utils/format'
-import { ChevronRightIcon } from './icons'
+import { ChevronRightIcon } from '../../../shared/icons'
 import { CARD_CLASS } from './layout'
 import PageLayout from './PageLayout'
 import ProductCard from './ProductCard'
+import { accioHref } from '../routes'
 
 // 상태 배지는 클릭 요소가 아니라 포인트 컬러 없이 무채색 단계로만 구분한다
 const STATUS_BADGE_CLASS: Record<OrderStatus, string> = {
@@ -13,9 +14,9 @@ const STATUS_BADGE_CLASS: Record<OrderStatus, string> = {
 }
 
 const STATUS_ACTION: Record<OrderStatus, { label: string; href: string; strong?: boolean }> = {
-  배송중: { label: '배송 조회', href: '#/order' },
-  배송완료: { label: '리뷰 쓰기', href: '#/detail', strong: true },
-  구매확정: { label: '재구매', href: '#/detail' },
+  배송중: { label: '배송 조회', href: accioHref('/order') },
+  배송완료: { label: '리뷰 쓰기', href: accioHref('/detail'), strong: true },
+  구매확정: { label: '재구매', href: accioHref('/detail') },
 }
 
 function SectionHeader({ title, linkLabel }: { title: string; linkLabel: string }) {
@@ -100,7 +101,7 @@ export default function MyPage() {
                       <span className="text-12 font-medium text-sub-weak tabular-nums">
                         {order.date} · {order.id}
                       </span>
-                      <a href="#/order" className="mt-1 truncate text-16 font-semibold text-main">
+                      <a href={accioHref('/order')} className="mt-1 truncate text-16 font-semibold text-main">
                         {order.title}
                       </a>
                       <span className="mt-1.5 text-12 text-sub tabular-nums">{formatWon(order.amount)}</span>

@@ -2,8 +2,9 @@ import { useState } from 'react'
 import logo from '../assets/figma/v3/logo.svg'
 import { AI_CHAT } from '../data/mock'
 import { formatWon } from '../utils/format'
-import { ArrowUpIcon } from './icons'
+import { ArrowUpIcon } from '../../../shared/icons'
 import PageLayout from './PageLayout'
+import { accioHref } from '../routes'
 
 // AI 대화 검색 결과. 읽기 폭 880px 가운데 정렬, 추천 상품은 미니 카드(B-2) 2열 → 모바일 1열.
 // AI 표시는 반짝이 아이콘 대신 ACCIO 워드마크로 한다.
@@ -36,7 +37,7 @@ export default function AiChatPage() {
               <li key={pick.id}>
                 {/* 썸네일 안쪽 여백(12) 보다 텍스트 쪽 여백(20)을 크게 둔다 */}
                 <a
-                  href="#/detail"
+                  href={accioHref('/detail')}
                   className="flex items-center gap-4 rounded-card-sm border border-regular bg-white py-3 pr-5 pl-3 transition-colors hover:border-black"
                 >
                   <div className="size-22 shrink-0 overflow-hidden rounded-thumb-sm bg-light">

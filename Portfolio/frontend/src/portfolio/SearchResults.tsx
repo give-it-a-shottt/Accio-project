@@ -1,5 +1,5 @@
-import { CASES, KEYWORDS, matchesQuery, type PortfolioCase } from '../../data/portfolio'
-import { SearchIcon } from '../icons'
+import { CASES, KEYWORDS, matchesQuery, type PortfolioCase } from './data'
+import { SearchIcon } from '../shared/icons'
 import CaseMeta from './CaseMeta'
 import { searchHref, type ResultTab } from './routes'
 

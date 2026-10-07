@@ -45,16 +45,17 @@ import detailThumb3 from "../assets/figma/v3/detail/thumb-3.jpg";
 import detailThumb4 from "../assets/figma/v3/detail/thumb-4.jpg";
 import detailThumb5 from "../assets/figma/v3/detail/thumb-5.jpg";
 import detailContent from "../assets/figma/v3/detail/content.svg";
+import { accioHref } from "../routes";
 
 // ── 상단 유틸리티 바 / 헤더 ──────────────────────────────────────────────
 export const WELCOME_NOTICE = "지금 가입하면 첫 구매 10% 쿠폰 & 무료배송";
 
 export const UTILITY_LINKS = [
-  { label: "로그인/회원가입", href: "#/login" },
-  { label: "고객센터", href: "#/support" },
+  { label: "로그인/회원가입", href: accioHref("/login") },
+  { label: "고객센터", href: accioHref("/support") },
   { label: "알림", href: "#" },
   // 주문 목록은 마이페이지에 있고, 개별 배송 조회는 거기서 들어간다
-  { label: "주문/배송", href: "#/mypage" },
+  { label: "주문/배송", href: accioHref("/mypage") },
 ];
 
 export const HEADER_SEARCH_PLACEHOLDER =
@@ -743,7 +744,7 @@ export const MY_PAGE = {
   grade: "WELCOME",
   point: 2320,
   menu: [
-    { label: "주문 내역", count: 10, href: "#/mypage" },
+    { label: "주문 내역", count: 10, href: accioHref("/mypage") },
     { label: "취소·반품 내역", count: 1, href: "#" },
     { label: "찜한 상품", count: 3, href: "#" },
     { label: "최근 본 상품", count: 24, href: "#" },

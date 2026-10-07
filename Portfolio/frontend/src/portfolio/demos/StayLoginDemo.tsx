@@ -1,12 +1,12 @@
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
-import apple from '../../../assets/portfolio/design/stay-login/apple.svg'
-import google from '../../../assets/portfolio/design/stay-login/google.svg'
-import googleMask from '../../../assets/portfolio/design/stay-login/google-mask.svg'
-import statusFill from '../../../assets/portfolio/design/stay-login/status-fill.svg'
-import statusOutline from '../../../assets/portfolio/design/stay-login/status-outline.svg'
-import visibilityOff from '../../../assets/portfolio/design/stay-login/visibility-off.svg'
-import visibilityOn from '../../../assets/portfolio/design/stay-login/visibility-on.svg'
-import { CheckIcon } from '../../icons'
+import apple from '../assets/design/stay-login/apple.svg'
+import google from '../assets/design/stay-login/google.svg'
+import googleMask from '../assets/design/stay-login/google-mask.svg'
+import statusFill from '../assets/design/stay-login/status-fill.svg'
+import statusOutline from '../assets/design/stay-login/status-outline.svg'
+import visibilityOff from '../assets/design/stay-login/visibility-off.svg'
+import visibilityOn from '../assets/design/stay-login/visibility-on.svg'
+import { CheckIcon } from '../../shared/icons'
 
 // 숙박 예약 앱 Accio 로그인 — 피그마 「로그인(수정)」 3안(336:741), 400×860 다크 화면.
 // 이 앱만의 색이라 포트폴리오 토큰 대신 시안 값을 그대로 쓴다.

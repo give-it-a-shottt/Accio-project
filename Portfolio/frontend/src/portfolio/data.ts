@@ -1,7 +1,7 @@
-import accioHome from '../assets/portfolio/home.png'
-import stayLoginV1 from '../assets/portfolio/design/stay-login/v1.png'
-import stayLoginV2 from '../assets/portfolio/design/stay-login/v2.png'
-import stayLoginV3 from '../assets/portfolio/design/stay-login/v3.png'
+import accioHome from './assets/home.png'
+import stayLoginV1 from './assets/design/stay-login/v1.png'
+import stayLoginV2 from './assets/design/stay-login/v2.png'
+import stayLoginV3 from './assets/design/stay-login/v3.png'
 
 // 검색형 포트폴리오 데이터 — 기준: 「검색형 포트폴리오 구상안」 Search Portfolio.dc.html
 // Accio 를 뺀 사례·지표는 시안의 예시 값이다. 실제 사례를 정리하면 여기서 바꾼다.
@@ -89,7 +89,7 @@ export const CASES: PortfolioCase[] = [
     tags: ['React', 'TypeScript', 'Tailwind'],
     keywords: 'accio 아씨오 쇼핑몰 이커머스 ai 검색 리액트 디자인 시스템',
     image: accioHome,
-    href: '#/home',
+    href: '#/accio',
   },
   {
     slug: 'traffic-scale-out',

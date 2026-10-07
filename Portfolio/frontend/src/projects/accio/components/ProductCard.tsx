@@ -1,5 +1,6 @@
 import heartIcon from "../assets/figma/v3/icons/heart.svg";
 import type { BadgeTone, Product } from "../data/mock";
+import { accioHref } from "../routes";
 
 interface ProductCardProps {
   product: Product;
@@ -59,7 +60,7 @@ export default function ProductCard({
           <p className="truncate text-12 font-regular text-sub">{store}</p>
           <h3 className="mt-1 truncate text-14 font-medium text-main">
             {/* 카드 전체를 덮는 링크 (찜 버튼은 z-10 으로 위에 둔다). 목업이라 모든 카드가 같은 상세 페이지로 간다 */}
-            <a href="#/detail" className="after:absolute after:inset-0">
+            <a href={accioHref('/detail')} className="after:absolute after:inset-0">
               {name}
             </a>
           </h3>

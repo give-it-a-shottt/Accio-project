@@ -1,5 +1,5 @@
-import { CASES } from '../../data/portfolio'
-import { ChevronRightIcon } from '../icons'
+import { CASES } from './data'
+import { ChevronRightIcon } from '../shared/icons'
 import CaseMeta from './CaseMeta'
 import { DESIGN_DEMOS } from './demos'
 import { searchHref } from './routes'

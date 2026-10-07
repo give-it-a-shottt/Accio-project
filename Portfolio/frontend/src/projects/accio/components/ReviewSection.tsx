@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { PRODUCT_DETAIL, PRODUCT_REVIEWS, type ProductReview } from '../data/mock'
 import { formatCount } from '../utils/format'
-import { StarIcon } from './icons'
+import { StarIcon } from '../../../shared/icons'
 import { CARD_CLASS } from './layout'
 
 function Stars({ rating, size = 16 }: { rating: number; size?: number }) {

@@ -1,6 +1,6 @@
 import { useId, useState } from 'react'
-import { getSuggestions, splitMatch } from '../../data/portfolio'
-import { ArrowRightIcon, CloseIcon, SearchIcon } from '../icons'
+import { getSuggestions, splitMatch } from './data'
+import { ArrowRightIcon, CloseIcon, SearchIcon } from '../shared/icons'
 
 /** 전역 `/` 단축키가 찾아 포커스하는 입력창 id (화면마다 검색창은 하나뿐이다) */
 export const SEARCH_INPUT_ID = 'portfolio-search'

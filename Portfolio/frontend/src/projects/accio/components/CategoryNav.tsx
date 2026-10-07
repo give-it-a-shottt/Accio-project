@@ -1,6 +1,7 @@
 import menuIcon from '../assets/figma/v3/icons/menu.svg'
 import { CATEGORIES } from '../data/mock'
 import Container from './Container'
+import { accioHref } from '../routes'
 
 export default function CategoryNav() {
   return (
@@ -19,7 +20,7 @@ export default function CategoryNav() {
             {CATEGORIES.map((category, i) => (
               <li key={category}>
                 <a
-                  href="#/list"
+                  href={accioHref('/list')}
                   className={`text-13 font-medium whitespace-nowrap ${i === 0 ? 'text-accent' : 'text-sub'}`}
                 >
                   {category}

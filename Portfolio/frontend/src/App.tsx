@@ -1,31 +1,17 @@
-import { useEffect } from "react";
-import AiChatPage from "./components/AiChatPage";
-import AiSearchHero from "./components/AiSearchHero";
-import BrandSection from "./components/BrandSection";
-import CartPage from "./components/CartPage";
-import CategoryNav from "./components/CategoryNav";
-import Container from "./components/Container";
-import DetailPage from "./components/DetailPage";
-import FeatureBanners from "./components/FeatureBanners";
-import Footer from "./components/Footer";
-import ListPage from "./components/ListPage";
-import LoginPage from "./components/LoginPage";
-import MainHeader from "./components/MainHeader";
-import MyPage from "./components/MyPage";
-import OrderTrackingPage from "./components/OrderTrackingPage";
-import PortfolioApp from "./components/portfolio/PortfolioApp";
-import ProductSection from "./components/ProductSection";
-import ShortFormSection from "./components/ShortFormSection";
-import SupportPage from "./components/SupportPage";
-import TopUtilityHeader from "./components/TopUtilityHeader";
-import {
-  DIGITAL_SECTION,
-  FEATURE_BANNERS,
-  GOURMET_SECTION,
-  LIVING_SECTION,
-  TRENDING_SECTION,
-} from "./data/mock";
-import useHashRoute from "./hooks/useHashRoute";
+import { lazy, Suspense, useEffect } from "react";
+import PortfolioApp from "./portfolio/PortfolioApp";
+import { ACCIO_BASE, LEGACY_ROUTES } from "./projects/accio/routes";
+import useHashRoute from "./shared/hooks/useHashRoute";
+
+// 프로젝트는 들어갈 때 코드를 받는다 — 프로젝트가 늘어도 포트폴리오 첫 화면은 자기 코드만 받는다.
+// 새 프로젝트: projects/<이름>/ 를 만들고 아래에 lazy 한 줄 + 라우트 한 줄을 더한다.
+const AccioApp = lazy(() => import("./projects/accio/AccioApp"));
+
+/** '/accio', '/accio/list' 처럼 base 아래 경로면 base 뒤 경로('/', '/list')를, 아니면 null */
+function subPath(path: string, base: string) {
+  if (path === base) return "/";
+  return path.startsWith(`${base}/`) ? path.slice(base.length) : null;
+}
 
 function App() {
   const route = useHashRoute();
@@ -35,44 +21,25 @@ function App() {
     window.scrollTo(0, 0);
   }, [route]);
 
-  // 첫 화면은 검색형 포트폴리오('#/', '#/search?q=…', '#/case/…'), 쇼핑몰 홈은 '#/home' (그 밖의 주소도 홈으로 보낸다)
+  // 입구는 검색형 포트폴리오('#/', '#/search?q=…', '#/case/…'). 각 프로젝트는 '#/<프로젝트>/…' 아래에 있다.
   const [path, search = ""] = route.split("?");
-  if (path === "/" || path === "/search")
-    return <PortfolioApp path={path} params={new URLSearchParams(search)} />;
+  const params = new URLSearchParams(search);
+
+  const accioPath = subPath(path, ACCIO_BASE) ?? LEGACY_ROUTES[path];
+  if (accioPath)
+    return (
+      <Suspense fallback={null}>
+        <AccioApp path={accioPath} />
+      </Suspense>
+    );
+
+  if (path === "/search") return <PortfolioApp path="/search" params={params} />;
   // 사례 상세 '#/case/{slug}'
   if (path.startsWith("/case/"))
-    return <PortfolioApp path="/case" params={new URLSearchParams(search)} slug={path.slice("/case/".length)} />;
-  if (route === "/login") return <LoginPage />;
-  if (route === "/list") return <ListPage />;
-  if (route === "/detail") return <DetailPage />;
-  if (route === "/ai") return <AiChatPage />;
-  if (route === "/cart") return <CartPage />;
-  if (route === "/mypage") return <MyPage />;
-  if (route === "/order") return <OrderTrackingPage />;
-  if (route === "/support") return <SupportPage />;
+    return <PortfolioApp path="/case" params={params} slug={path.slice("/case/".length)} />;
 
-  return (
-    <div className="flex min-h-svh flex-col bg-white">
-      <TopUtilityHeader />
-      <MainHeader />
-      <CategoryNav />
-      <main>
-        <Container className="flex flex-col items-center gap-8 pt-6 sm:gap-10 sm:pt-8 lg:gap-15 lg:pt-10">
-          <AiSearchHero />
-          <FeatureBanners banners={FEATURE_BANNERS} />
-          <ShortFormSection />
-          <ProductSection section={TRENDING_SECTION} />
-          <ProductSection section={GOURMET_SECTION} />
-          <BrandSection />
-          <ProductSection section={DIGITAL_SECTION} />
-          <ProductSection section={LIVING_SECTION} />
-        </Container>
-      </main>
-      <div className="mt-16 lg:mt-32">
-        <Footer />
-      </div>
-    </div>
-  );
+  // 그 밖의 주소는 포트폴리오 홈으로 보낸다
+  return <PortfolioApp path="/" params={params} />;
 }
 
 export default App;

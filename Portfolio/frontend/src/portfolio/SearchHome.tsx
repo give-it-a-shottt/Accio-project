@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'motion/react'
-import { KEYWORDS } from '../../data/portfolio'
+import { KEYWORDS } from './data'
 import { EASE_OUT } from './motion'
 import { searchHref } from './routes'
 import SearchBox from './SearchBox'

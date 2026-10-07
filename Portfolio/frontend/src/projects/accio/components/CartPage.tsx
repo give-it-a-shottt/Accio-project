@@ -1,9 +1,10 @@
 import { useState, type ReactNode } from 'react'
 import { CART_COUPON, CART_ITEMS, type CartItem } from '../data/mock'
 import { formatWon } from '../utils/format'
-import { CheckIcon, MinusIcon, PlusIcon } from './icons'
+import { CheckIcon, MinusIcon, PlusIcon } from '../../../shared/icons'
 import { CARD_CLASS } from './layout'
 import PageLayout from './PageLayout'
+import { accioHref } from '../routes'
 
 const MAX_QUANTITY = 99
 const STEPS = ['장바구니', '주문서', '주문완료']
@@ -63,7 +64,7 @@ function CartRow({
       <div className="flex min-w-0 flex-1 flex-col gap-4 sm:flex-row sm:justify-between">
         <div className="flex min-w-0 flex-col items-start">
           <span className="text-12 font-medium text-main lg:text-13">{item.brand}</span>
-          <a href="#/detail" className="mt-1 line-clamp-2 text-16 font-semibold text-main sm:text-18 lg:text-20">
+          <a href={accioHref('/detail')} className="mt-1 line-clamp-2 text-16 font-semibold text-main sm:text-18 lg:text-20">
             {item.name}
           </a>
           <span className="mt-1.5 text-12 text-sub sm:mt-2 sm:text-13">
@@ -162,7 +163,7 @@ export default function CartPage() {
           {items.length === 0 ? (
             <div className="flex flex-col items-center gap-4 px-6 py-20 text-center">
               <p className="text-15 text-sub">장바구니가 비어 있어요</p>
-              <a href="#/home" className="flex h-11 items-center rounded-full border border-black px-5 text-14 font-semibold text-main">
+              <a href={accioHref()} className="flex h-11 items-center rounded-full border border-black px-5 text-14 font-semibold text-main">
                 쇼핑하러 가기
               </a>
             </div>

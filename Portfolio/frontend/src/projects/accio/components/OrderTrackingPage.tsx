@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ORDER_TRACKING } from '../data/mock'
 import { CARD_CLASS } from './layout'
 import PageLayout from './PageLayout'
+import { accioHref } from '../routes'
 
 // 주문 요약 카드(진행 단계) 아래에 배송 추적 + 배송지 카드. 진행 표시는 아이콘 대신 4칸 막대와 글자로만 보여준다.
 export default function OrderTrackingPage() {
@@ -130,7 +131,7 @@ export default function OrderTrackingPage() {
             </p>
           </div>
           <a
-            href="#/support"
+            href={accioHref('/support')}
             className="flex h-11 items-center justify-center rounded-card-sm border border-black text-14 font-semibold text-main"
           >
             배송 문의하기

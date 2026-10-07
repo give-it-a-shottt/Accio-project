@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { motion, useReducedMotion, type HTMLMotionProps, type Transition } from 'motion/react'
-import characterImg from '../../assets/portfolio/character.jpg'
-import dividerImg from '../../assets/portfolio/divider.svg'
-import { ArrowRightIcon } from '../icons'
+import characterImg from './assets/character.jpg'
+import dividerImg from './assets/divider.svg'
+import { ArrowRightIcon } from '../shared/icons'
 import { EASE_OUT, INTRO_SECONDS } from './motion'
 import { LOGO_LAYOUT_ID } from './PortfolioHeader'
 

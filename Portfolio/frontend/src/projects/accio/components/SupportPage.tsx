@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import logo from '../assets/figma/v3/logo.svg'
 import { SUPPORT } from '../data/mock'
-import { ArrowUpIcon, ChevronDownIcon, ParcelIcon, ReceiptIcon, SwapIcon } from './icons'
+import { ArrowUpIcon, ChevronDownIcon, ParcelIcon, ReceiptIcon, SwapIcon } from '../../../shared/icons'
 import { CARD_CLASS } from './layout'
 import PageLayout from './PageLayout'
 

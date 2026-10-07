@@ -3,6 +3,7 @@ import aiSearchIcon from "../assets/figma/v3/icons/ai-search.svg";
 import micIcon from "../assets/figma/v3/icons/mic.svg";
 import { AI_SEARCH } from "../data/mock";
 import useMediaQuery from "../hooks/useMediaQuery";
+import { accioHref } from "../routes";
 
 export default function AiSearchHero() {
   const [query, setQuery] = useState("");
@@ -24,7 +25,7 @@ export default function AiSearchHero() {
         onSubmit={(e) => {
           e.preventDefault();
           // 목업이라 검색어와 상관없이 정해진 대화 결과 화면으로 간다
-          window.location.hash = "/ai";
+          window.location.hash = accioHref("/ai");
         }}
         className="flex h-13 w-full items-center rounded-full border-2 border-accent/20 bg-white px-5 shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)]">
         <input
