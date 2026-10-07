@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'motion/react'
+import { motion, useDragControls, useReducedMotion } from 'motion/react'
 import { useEffect, useRef, useSyncExternalStore, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { useFrameLayer } from '../../shared/frameLayer'
@@ -97,11 +97,18 @@ interface BottomSheetProps {
   children: ReactNode
 }
 
-/** 아래에서 올라오는 시트. 배경을 누르거나 Esc 로 닫는다. */
+/** 손잡이를 이만큼(px) 끌어내리거나 빠르게 튕기면 닫는다 */
+const DRAG_CLOSE_DISTANCE = 100
+const DRAG_CLOSE_VELOCITY = 500
+
+/** 아래에서 올라오는 시트. 배경·손잡이를 누르거나, 손잡이를 끌어내리거나, Esc 로 닫는다. */
 export function BottomSheet({ onClose, labelledBy, children }: BottomSheetProps) {
   const sheetRef = useRef<HTMLDivElement>(null)
   const layer = useFrameLayer()
   const reduceMotion = useReducedMotion()
+  // 끌기는 손잡이에서만 시작한다 — 시트 안의 세로 스크롤·카드 넘기기와 겹치지 않게
+  const dragControls = useDragControls()
+  const dragged = useRef(false)
 
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null
@@ -140,11 +147,32 @@ export function BottomSheet({ onClose, labelledBy, children }: BottomSheetProps)
         initial={reduceMotion ? false : { y: '100%' }}
         animate={{ y: 0 }}
         transition={{ type: 'spring', damping: 30, stiffness: 320 }}
+        drag="y"
+        dragControls={dragControls}
+        dragListener={false}
+        dragConstraints={{ top: 0, bottom: 0 }}
+        dragElastic={{ top: 0, bottom: 0.7 }}
+        onDragStart={() => {
+          dragged.current = true
+        }}
+        onDragEnd={(_, info) => {
+          if (info.offset.y > DRAG_CLOSE_DISTANCE || info.velocity.y > DRAG_CLOSE_VELOCITY) onClose()
+        }}
         className="scrollbar-none absolute inset-x-0 bottom-0 flex max-h-[92svh] flex-col overflow-y-auto rounded-t-[25px] bg-white outline-none sm:max-h-[92%]"
       >
-        <div aria-hidden="true" className="flex h-6 shrink-0 items-center justify-center">
+        <button
+          type="button"
+          aria-label="시트 닫기"
+          onPointerDown={(e) => {
+            dragged.current = false
+            dragControls.start(e)
+          }}
+          // 끌다가 놓은 경우에는 누른 것으로 치지 않는다 (덜 끌어서 제자리로 돌아온 경우 닫히지 않게)
+          onClick={() => !dragged.current && onClose()}
+          className="flex h-6 w-full shrink-0 cursor-grab touch-none items-center justify-center active:cursor-grabbing"
+        >
           <span className="h-1 w-9 rounded-[2px] bg-[#767676]" />
-        </div>
+        </button>
         {children}
       </motion.div>
     </div>,

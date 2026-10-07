@@ -1,4 +1,6 @@
+import { useReducedMotion } from 'motion/react'
 import { useCallback, useId, useRef, useState, type FormEvent } from 'react'
+import { ChevronRightIcon } from '../../../shared/icons'
 import pageDot from '../assets/page-dot.svg'
 import { BottomSheet, BRAND_BUTTON_CLASS, Footer, PartnerTag, PlacePhoto, Screen, Tag } from '../components'
 import { currentMealIndex, joinInfo, openText, priceBand, trustBadges, waitingExpected, walkText } from '../format'
@@ -145,12 +147,24 @@ function VariationSheet({ meal, mealIndex, situation, onClose }: VariationSheetP
   const [active, setActive] = useState(0)
   const trackRef = useRef<HTMLUListElement>(null)
 
+  const reduceMotion = useReducedMotion()
+
+  const cardStep = () => {
+    const card = trackRef.current?.firstElementChild as HTMLElement | null
+    return card ? card.offsetWidth + CARD_GAP : 0
+  }
+
   // 넘긴 카드 위치로 아래 페이지 점을 맞춘다
   const onScroll = () => {
     const track = trackRef.current
-    const card = track?.firstElementChild as HTMLElement | null
-    if (!track || !card) return
-    setActive(Math.round(track.scrollLeft / (card.offsetWidth + CARD_GAP)))
+    const step = cardStep()
+    if (!track || !step) return
+    setActive(Math.min(places.length - 1, Math.round(track.scrollLeft / step)))
+  }
+
+  // 마우스로는 옆으로 밀 수 없어서 화살표·페이지 점으로도 넘긴다
+  const showCard = (index: number) => {
+    trackRef.current?.scrollTo({ left: index * cardStep(), behavior: reduceMotion ? 'auto' : 'smooth' })
   }
 
   return (
@@ -170,25 +184,43 @@ function VariationSheet({ meal, mealIndex, situation, onClose }: VariationSheetP
 
       {places.length > 0 ? (
         <>
-          <ul
-            ref={trackRef}
-            onScroll={onScroll}
-            className="scrollbar-none flex snap-x snap-mandatory scroll-px-5 gap-3 overflow-x-auto px-5"
-          >
-            {places.map((place, index) => (
-              <li key={place.id} className="w-[303px] max-w-[calc(100vw-72px)] shrink-0 snap-start">
-                <VariationCard place={place} number={String(index + 1).padStart(2, '0')} href={maestroHref(`/place/${place.id}`, { meal: mealIndex, s: situation.key, n: index + 1 })} />
-              </li>
-            ))}
-          </ul>
-          <div aria-hidden="true" className="flex items-center justify-center gap-[5px] pt-6">
-            {places.map((place, index) =>
-              index === active ? (
-                <span key={place.id} className="h-1 w-4 rounded-[2px] bg-main" />
-              ) : (
-                <img key={place.id} src={pageDot} alt="" width={4} height={4} />
-              ),
+          <div className="relative">
+            <ul
+              ref={trackRef}
+              onScroll={onScroll}
+              className="scrollbar-none flex snap-x snap-mandatory scroll-px-5 gap-3 overflow-x-auto px-5"
+            >
+              {places.map((place, index) => (
+                <li key={place.id} className="w-[303px] max-w-[calc(100vw-72px)] shrink-0 snap-start">
+                  <VariationCard place={place} number={String(index + 1).padStart(2, '0')} href={maestroHref(`/place/${place.id}`, { meal: mealIndex, s: situation.key, n: index + 1 })} />
+                </li>
+              ))}
+            </ul>
+            {/* 화살표는 마우스를 쓰는 화면에만 — 휴대폰은 손가락으로 민다 */}
+            {active > 0 && (
+              <CarouselArrow direction="prev" onClick={() => showCard(active - 1)} />
             )}
+            {active < places.length - 1 && (
+              <CarouselArrow direction="next" onClick={() => showCard(active + 1)} />
+            )}
+          </div>
+          <div className="flex items-center justify-center pt-5">
+            {places.map((place, index) => (
+              <button
+                key={place.id}
+                type="button"
+                onClick={() => showCard(index)}
+                aria-label={`${index + 1}번째 대안 보기`}
+                aria-current={index === active}
+                className="flex h-6 items-center px-[2.5px]"
+              >
+                {index === active ? (
+                  <span className="h-1 w-4 rounded-[2px] bg-main" />
+                ) : (
+                  <img src={pageDot} alt="" width={4} height={4} />
+                )}
+              </button>
+            ))}
           </div>
         </>
       ) : (
@@ -201,6 +233,20 @@ function VariationSheet({ meal, mealIndex, situation, onClose }: VariationSheetP
         다른 상황 고르기
       </button>
     </BottomSheet>
+  )
+}
+
+function CarouselArrow({ direction, onClick }: { direction: 'prev' | 'next'; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={direction === 'prev' ? '이전 대안' : '다음 대안'}
+      // 글자를 가리지 않게 카드 사진(높이 122px)의 가운데에 둔다
+      className={`absolute top-[43px] hidden size-9 items-center justify-center rounded-full bg-white text-main shadow-[0_2px_8px_rgba(17,17,17,0.16)] pointer-fine:flex ${direction === 'prev' ? 'left-2' : 'right-2'}`}
+    >
+      <ChevronRightIcon size={18} className={direction === 'prev' ? 'rotate-180' : undefined} />
+    </button>
   )
 }
 
