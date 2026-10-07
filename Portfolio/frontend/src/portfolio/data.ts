@@ -1,4 +1,5 @@
 import accioHome from './assets/home.png'
+import maestroLive from './assets/maestro.jpg'
 import stayLoginV1 from './assets/design/stay-login/v1.png'
 import stayLoginV2 from './assets/design/stay-login/v2.png'
 import stayLoginV3 from './assets/design/stay-login/v3.png'
@@ -90,6 +91,23 @@ export const CASES: PortfolioCase[] = [
     keywords: 'accio 아씨오 쇼핑몰 이커머스 ai 검색 리액트 디자인 시스템',
     image: accioHome,
     href: '#/accio',
+  },
+  {
+    slug: 'maestro',
+    type: 'Front',
+    code: 'PROJECT 05',
+    date: '2026.10',
+    title: '마에스트로 — 틀어진 일정의 플랜 B 지휘자',
+    description:
+      '짜둔 서울 일정의 끼니마다 "속이 더부룩해", "비 와" 같은 상황별 대안 식당을 미리 붙여두고, 당일 버튼 하나로 꺼내 쓰는 모바일 웹. YUMITHON 해커톤 출품작.',
+    metrics: [
+      { label: '유미 요청', value: '끼니당 1번' },
+      { label: '상황', value: '6개 × 대안 3곳' },
+    ],
+    tags: ['React', 'FastAPI', '헤이유미 API'],
+    keywords: '마에스트로 maestro 해커톤 yumithon 헤이유미 맛집 일정 플랜B 대안 식당 fastapi 백엔드',
+    image: maestroLive,
+    href: '#/maestro',
   },
   {
     slug: 'traffic-scale-out',
@@ -211,6 +229,7 @@ export const KEYWORDS: { label: string; type: CaseType }[] = [
   { label: '성능 개선', type: 'Front' },
   { label: '디자인 시스템', type: 'Front' },
   { label: '로그인 화면', type: 'Design' },
+  { label: '해커톤', type: 'Front' },
 ]
 
 // ── 검색 ────────────────────────────────────────────────────────────────

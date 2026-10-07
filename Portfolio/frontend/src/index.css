@@ -89,6 +89,12 @@
   --color-portfolio: #2563eb;
   --color-portfolio-soft: #eff4ff;
 
+  /* 마에스트로(해커톤 프로젝트) — 다른 프로젝트 색과 섞이지 않게 maestro- 접두어를 붙인다 */
+  --color-maestro: #8855ff;
+  --color-maestro-dim: #181a1d80;
+  --font-maestro-opus: "Lora", serif;
+  --font-maestro-quote: "Noto Serif KR", serif;
+
   /* Neutral — icon (text-icon-main …) */
   --color-icon-main: #2a2a37;
   --color-icon-sub: #545461;

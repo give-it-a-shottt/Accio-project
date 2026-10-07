@@ -1,11 +1,13 @@
 import { lazy, Suspense, useEffect } from "react";
 import PortfolioApp from "./portfolio/PortfolioApp";
 import { ACCIO_BASE, LEGACY_ROUTES } from "./projects/accio/routes";
+import { MAESTRO_BASE } from "./projects/maestro/routes";
 import useHashRoute from "./shared/hooks/useHashRoute";
 
 // 프로젝트는 들어갈 때 코드를 받는다 — 프로젝트가 늘어도 포트폴리오 첫 화면은 자기 코드만 받는다.
 // 새 프로젝트: projects/<이름>/ 를 만들고 아래에 lazy 한 줄 + 라우트 한 줄을 더한다.
 const AccioApp = lazy(() => import("./projects/accio/AccioApp"));
+const MaestroApp = lazy(() => import("./projects/maestro/MaestroApp"));
 
 /** '/accio', '/accio/list' 처럼 base 아래 경로면 base 뒤 경로('/', '/list')를, 아니면 null */
 function subPath(path: string, base: string) {
@@ -30,6 +32,14 @@ function App() {
     return (
       <Suspense fallback={null}>
         <AccioApp path={accioPath} />
+      </Suspense>
+    );
+
+  const maestroPath = subPath(path, MAESTRO_BASE);
+  if (maestroPath)
+    return (
+      <Suspense fallback={null}>
+        <MaestroApp path={maestroPath} params={params} />
       </Suspense>
     );
 
