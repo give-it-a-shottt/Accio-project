@@ -1,0 +1,27 @@
+# Supabase 무료 DB는 1주일 동안 쓰지 않으면 일시정지된다.
+# 사흘마다 Accio 백엔드의 /health/db 를 불러 DB에 쿼리(SELECT 1)를 한 번 보낸다.
+# 설정: GitHub 저장소 Settings → Secrets and variables → Actions → Variables 에
+#       ACCIO_API_URL = https://<Render 의 Accio 주소> 를 넣는다. 없으면 아무것도 하지 않는다.
+name: Keep Supabase awake
+
+on:
+  schedule:
+    - cron: "0 0 */3 * *" # 사흘마다 09:00 KST
+  workflow_dispatch: # Actions 탭에서 직접 눌러 확인할 수도 있다
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping Accio /health/db
+        env:
+          ACCIO_API_URL: ${{ vars.ACCIO_API_URL }}
+        run: |
+          if [ -z "$ACCIO_API_URL" ]; then
+            echo "ACCIO_API_URL 변수가 없어서 건너뛴다 (Accio 백엔드를 아직 배포하지 않음)"
+            exit 0
+          fi
+          # Render 무료 서버가 잠들어 있으면 깨는 데 1분쯤 걸려서 넉넉히 기다리고 한 번 더 시도한다
+          curl --fail --silent --show-error --max-time 120 --retry 2 --retry-delay 10 \
+            "$ACCIO_API_URL/health/db"

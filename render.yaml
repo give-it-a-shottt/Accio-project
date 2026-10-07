@@ -1,0 +1,23 @@
+# Render Blueprint — Render 대시보드에서 New → Blueprint 로 이 저장소를 고르면 아래 서버를 만든다.
+# 백엔드가 늘면 services 에 하나씩 더한다 (rootDir 만 바꾸면 된다).
+services:
+  - type: web
+    name: maestro-api
+    runtime: python
+    plan: free
+    region: singapore # 한국에서 가장 가까운 지역
+    rootDir: Portfolio/backend/maestro # 이 폴더가 바뀔 때만 다시 배포한다
+    buildCommand: uv sync --frozen --no-dev
+    startCommand: uv run --frozen --no-dev fastapi run app/main.py --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      # 공개 사이트는 mock (유미 호출 0회). 발표·확인 때만 대시보드에서 real 로 바꾼다
+      - key: YUMI_MODE
+        value: mock
+      # 아래 둘은 처음 만들 때 대시보드가 값을 물어본다 (저장소에는 값을 두지 않는다)
+      - key: YUMI_API_KEY
+        sync: false
+      - key: CORS_ORIGINS # 예: ["https://내프로젝트.vercel.app"]
+        sync: false
