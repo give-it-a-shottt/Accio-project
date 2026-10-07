@@ -1,0 +1,62 @@
+[
+  {
+    "regionCode": "1114060500",
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "dong": "을지로동",
+    "fullName": "서울특별시 중구 을지로동",
+    "center": {
+      "lat": 37.5663,
+      "lng": 126.9917
+    },
+    "placeCount": 16
+  },
+  {
+    "regionCode": "1120069000",
+    "sido": "서울특별시",
+    "sigungu": "성동구",
+    "dong": "성수1가1동",
+    "fullName": "서울특별시 성동구 성수1가1동",
+    "center": {
+      "lat": 37.5446,
+      "lng": 127.0557
+    },
+    "placeCount": 13
+  },
+  {
+    "regionCode": "1120071000",
+    "sido": "서울특별시",
+    "sigungu": "성동구",
+    "dong": "성수2가1동",
+    "fullName": "서울특별시 성동구 성수2가1동",
+    "center": {
+      "lat": 37.5425,
+      "lng": 127.059
+    },
+    "placeCount": 0
+  },
+  {
+    "regionCode": "1111061500",
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "dong": "익선동",
+    "fullName": "서울특별시 종로구 익선동",
+    "center": {
+      "lat": 37.574,
+      "lng": 126.989
+    },
+    "placeCount": 0
+  },
+  {
+    "regionCode": "1144071000",
+    "sido": "서울특별시",
+    "sigungu": "마포구",
+    "dong": "연남동",
+    "fullName": "서울특별시 마포구 연남동",
+    "center": {
+      "lat": 37.566,
+      "lng": 126.923
+    },
+    "placeCount": 0
+  }
+]

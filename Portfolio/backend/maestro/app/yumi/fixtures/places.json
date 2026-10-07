@@ -1,0 +1,3772 @@
+[
+  {
+    "id": "mock-ej-01",
+    "name": "을지 한그릇 국밥",
+    "category": "restaurant",
+    "categoryLabel": "국밥",
+    "location": {
+      "lat": 37.567234,
+      "lng": 126.99238
+    },
+    "address": {
+      "road": "서울 중구 을지로 100",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.95,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.9,
+    "price": {
+      "level": 1,
+      "avg": 10000,
+      "min": 7000,
+      "max": 15000
+    },
+    "menuSummary": {
+      "count": 7,
+      "items": [
+        "돼지국밥",
+        "순대국밥",
+        "수육"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 2
+    },
+    "serviceAttributes": {
+      "venue_subtype": "gukbap_soup",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": true
+    },
+    "atmosphere": [
+      "traditional"
+    ],
+    "atmosphereScores": {
+      "traditional": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "맑은 돼지국밥이 대표인 노포. 회전이 빨라 점심 혼밥도 편하다.",
+    "phone": "02-2200-1000",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": {
+      "certified": true,
+      "label": "백년가게"
+    },
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": true,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 120,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-02",
+    "name": "을지 칼국수집",
+    "category": "restaurant",
+    "categoryLabel": "칼국수",
+    "location": {
+      "lat": 37.566019,
+      "lng": 126.993709
+    },
+    "address": {
+      "road": "서울 중구 을지로 107",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.88,
+    "sourceCount": 4,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.78,
+    "price": {
+      "level": 1,
+      "avg": 9000,
+      "min": 6300,
+      "max": 13500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "바지락칼국수",
+        "김치만두"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "noodles",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "traditional",
+      "cozy"
+    ],
+    "atmosphereScores": {
+      "traditional": 0.85,
+      "cozy": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "바지락 육수가 개운한 칼국수. 양이 넉넉하고 국물이 순하다.",
+    "phone": "02-2213-1111",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": {
+      "certified": true,
+      "label": "백년가게"
+    },
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "4개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 157,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-03",
+    "name": "맑은 곰탕 을지로점",
+    "category": "restaurant",
+    "categoryLabel": "곰탕",
+    "location": {
+      "lat": 37.564105,
+      "lng": 126.992708
+    },
+    "address": {
+      "road": "서울 중구 을지로 114",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.81,
+    "sourceCount": 5,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.66,
+    "price": {
+      "level": 2,
+      "avg": 13000,
+      "min": 9100,
+      "max": 19500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "곰탕",
+        "수육 반접시"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "gukbap_soup",
+      "reservable": true,
+      "private_room": true,
+      "parking": true,
+      "parking_type": "onsite",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet",
+      "clean"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85,
+      "clean": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "기름기 적은 곰탕. 조용한 룸이 있어 일행과 쉬어 가기 좋다.",
+    "phone": "02-2226-1222",
+    "reservationChannels": [
+      "yumi",
+      "phone"
+    ],
+    "yumiReservable": true,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "5개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 194,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-04",
+    "name": "을지 우동",
+    "category": "restaurant",
+    "categoryLabel": "우동",
+    "location": {
+      "lat": 37.56341,
+      "lng": 126.98864
+    },
+    "address": {
+      "road": "서울 중구 을지로 121",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.74,
+    "sourceCount": 6,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.54,
+    "price": {
+      "level": 1,
+      "avg": 9500,
+      "min": 6650,
+      "max": 14250
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "가케우동",
+        "유부우동"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로4가",
+      "walkMin": 5
+    },
+    "serviceAttributes": {
+      "venue_subtype": "noodles",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "cozy"
+    ],
+    "atmosphereScores": {
+      "cozy": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "멸치 국물 우동. 자극이 적어 속이 불편할 때 찾는 집.",
+    "phone": "02-2239-1333",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": true,
+      "basis": [
+        "6개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 231,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-05",
+    "name": "전복죽 을지당",
+    "category": "restaurant",
+    "categoryLabel": "죽",
+    "location": {
+      "lat": 37.566945,
+      "lng": 126.989464
+    },
+    "address": {
+      "road": "서울 중구 을지로 128",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.67,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.9,
+    "price": {
+      "level": 1,
+      "avg": 12000,
+      "min": 8400,
+      "max": 18000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "전복죽",
+        "야채죽"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "전복죽 전문. 부드럽고 담백해 속이 더부룩할 때 좋다.",
+    "phone": "02-2252-1444",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 268,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-06",
+    "name": "노가리 골목 호프",
+    "category": "restaurant",
+    "categoryLabel": "호프",
+    "location": {
+      "lat": 37.566704,
+      "lng": 126.992583
+    },
+    "address": {
+      "road": "서울 중구 을지로 135",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.95,
+    "sourceCount": 4,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.78,
+    "price": {
+      "level": 1,
+      "avg": 8000,
+      "min": 5600,
+      "max": 12000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "노가리",
+        "생맥주"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 1
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [
+        "alcohol"
+      ],
+      "dietary": {},
+      "waiting_expected": true
+    },
+    "atmosphere": [
+      "lively"
+    ],
+    "atmosphereScores": {
+      "lively": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "을지로 노가리 골목의 터줏대감. 저녁엔 늘 시끌벅적하다.",
+    "phone": "02-2265-1555",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": {
+      "certified": true,
+      "label": "백년가게"
+    },
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "4개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 305,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-07",
+    "name": "을지 숯불갈비",
+    "category": "restaurant",
+    "categoryLabel": "갈비",
+    "location": {
+      "lat": 37.564568,
+      "lng": 126.994304
+    },
+    "address": {
+      "road": "서울 중구 을지로 142",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.88,
+    "sourceCount": 5,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.66,
+    "price": {
+      "level": 3,
+      "avg": 32000,
+      "min": 22400,
+      "max": 48000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "돼지갈비",
+        "냉면"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean_bbq",
+      "reservable": true,
+      "private_room": true,
+      "parking": true,
+      "parking_type": "valet",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "lively"
+    ],
+    "atmosphereScores": {
+      "lively": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "참숯에 굽는 양념갈비. 단체 룸과 발렛 주차가 된다.",
+    "phone": "02-2278-1666",
+    "reservationChannels": [
+      "yumi",
+      "phone"
+    ],
+    "yumiReservable": true,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": true,
+      "basis": [
+        "5개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 342,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-08",
+    "name": "조용한 다방",
+    "category": "cafe",
+    "categoryLabel": "카페",
+    "location": {
+      "lat": 37.565034,
+      "lng": 126.991119
+    },
+    "address": {
+      "road": "서울 중구 을지로 149",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.81,
+    "sourceCount": 6,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.54,
+    "price": {
+      "level": 1,
+      "avg": 5500,
+      "min": 3849,
+      "max": 8250
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "핸드드립",
+        "쌍화차"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 2
+    },
+    "serviceAttributes": {
+      "venue_subtype": "coffee",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [
+        "coffee",
+        "dessert"
+      ],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet",
+      "cozy",
+      "rainy_mood"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85,
+      "cozy": 0.75,
+      "rainy_mood": 0.65
+    },
+    "closureSignal": null,
+    "aiSummary": "레트로 다방 분위기의 조용한 카페. 비 오는 날 창가 자리가 좋다.",
+    "phone": "02-2291-1777",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "6개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 379,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-09",
+    "name": "을지로 파스타",
+    "category": "restaurant",
+    "categoryLabel": "파스타",
+    "location": {
+      "lat": 37.565225,
+      "lng": 126.987973
+    },
+    "address": {
+      "road": "서울 중구 을지로 156",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.74,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.9,
+    "price": {
+      "level": 2,
+      "avg": 18000,
+      "min": 12600,
+      "max": 27000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "봉골레",
+        "버섯 리조또"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로4가",
+      "walkMin": 5
+    },
+    "serviceAttributes": {
+      "venue_subtype": "italian",
+      "reservable": true,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {
+        "vegetarian_options": true
+      },
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "trendy",
+      "cozy"
+    ],
+    "atmosphereScores": {
+      "trendy": 0.85,
+      "cozy": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "골목 2층의 작은 파스타집. 채식 메뉴가 있다.",
+    "phone": "02-2304-1888",
+    "reservationChannels": [
+      "yumi",
+      "phone"
+    ],
+    "yumiReservable": true,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 416,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-10",
+    "name": "을지 스시",
+    "category": "restaurant",
+    "categoryLabel": "스시",
+    "location": {
+      "lat": 37.570352,
+      "lng": 126.989839
+    },
+    "address": {
+      "road": "서울 중구 을지로 163",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.67,
+    "sourceCount": 4,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.78,
+    "price": {
+      "level": 4,
+      "avg": 45000,
+      "min": 31499,
+      "max": 67500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "오마카세 런치",
+        "초밥 모둠"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로입구",
+      "walkMin": 6
+    },
+    "serviceAttributes": {
+      "venue_subtype": "sushi_sashimi",
+      "reservable": true,
+      "private_room": true,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "예약제 스시. 룸이 있어 기분 전환용 조용한 식사에 맞다.",
+    "phone": "02-2317-1999",
+    "reservationChannels": [
+      "external",
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": true,
+      "basis": [
+        "4개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 453,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-11",
+    "name": "을지 냉면",
+    "category": "restaurant",
+    "categoryLabel": "냉면",
+    "location": {
+      "lat": 37.568423,
+      "lng": 126.992172
+    },
+    "address": {
+      "road": "서울 중구 을지로 170",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.95,
+    "sourceCount": 5,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": false,
+      "reason": "정기 휴무"
+    },
+    "freshnessScore": 0.66,
+    "price": {
+      "level": 2,
+      "avg": 14000,
+      "min": 9800,
+      "max": 21000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "물냉면",
+        "비빔냉면"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "noodles",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "clean"
+    ],
+    "atmosphereScores": {
+      "clean": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "평양냉면. 오늘은 정기 휴무.",
+    "phone": "02-2330-2110",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "5개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 490,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": true,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": true,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": true,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": true,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": true,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": true,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": true,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-12",
+    "name": "옛날 순대국",
+    "category": "restaurant",
+    "categoryLabel": "순대국",
+    "location": {
+      "lat": 37.567224,
+      "lng": 126.990311
+    },
+    "address": {
+      "road": "서울 중구 을지로 177",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.88,
+    "sourceCount": 6,
+    "possiblyClosed": true,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.54,
+    "price": {
+      "level": 1,
+      "avg": 9000,
+      "min": 6300,
+      "max": 13500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "순대국",
+        "머릿고기"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 2
+    },
+    "serviceAttributes": {
+      "venue_subtype": "gukbap_soup",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "traditional"
+    ],
+    "atmosphereScores": {
+      "traditional": 0.85
+    },
+    "closureSignal": "리뷰·지도 업데이트가 6개월째 없음",
+    "aiSummary": "오래된 순대국집. 최근 폐업 신호가 보인다.",
+    "phone": "02-2343-2221",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "6개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 527,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-13",
+    "name": "을지 중식당",
+    "category": "restaurant",
+    "categoryLabel": "중식",
+    "location": {
+      "lat": 37.56716,
+      "lng": 126.994682
+    },
+    "address": {
+      "road": "서울 중구 을지로 184",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.81,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.9,
+    "price": {
+      "level": 2,
+      "avg": 16000,
+      "min": 11200,
+      "max": 24000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "짜장면",
+        "탕수육"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "chinese",
+      "reservable": true,
+      "private_room": true,
+      "parking": true,
+      "parking_type": "partner",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "spacious"
+    ],
+    "atmosphereScores": {
+      "spacious": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "넓은 홀과 룸이 있는 중식당. 단체로 앉기 편하다.",
+    "phone": "02-2356-2332",
+    "reservationChannels": [
+      "yumi",
+      "phone"
+    ],
+    "yumiReservable": true,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": true,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 564,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-14",
+    "name": "을지 비건 키친",
+    "category": "restaurant",
+    "categoryLabel": "비건",
+    "location": {
+      "lat": 37.563336,
+      "lng": 126.9917
+    },
+    "address": {
+      "road": "서울 중구 을지로 191",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.74,
+    "sourceCount": 4,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.78,
+    "price": {
+      "level": 2,
+      "avg": 15000,
+      "min": 10500,
+      "max": 22500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "두부 덮밥",
+        "채소 비빔밥"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean",
+      "reservable": true,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {
+        "fully_vegan": true,
+        "vegan_options": true,
+        "vegetarian_options": true
+      },
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet",
+      "clean"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85,
+      "clean": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "자극 없는 비건 한식. 담백한 덮밥이 대표.",
+    "phone": "02-2369-2443",
+    "reservationChannels": [
+      "external",
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "4개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 601,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-15",
+    "name": "을지 루프탑 카페",
+    "category": "cafe",
+    "categoryLabel": "카페",
+    "location": {
+      "lat": 37.567883,
+      "lng": 126.993375
+    },
+    "address": {
+      "road": "서울 중구 을지로 198",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.67,
+    "sourceCount": 5,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.66,
+    "price": {
+      "level": 2,
+      "avg": 7000,
+      "min": 4900,
+      "max": 10500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "아인슈페너",
+        "크로플"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "coffee",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [
+        "coffee",
+        "dessert"
+      ],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "view",
+      "trendy"
+    ],
+    "atmosphereScores": {
+      "view": 0.85,
+      "trendy": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "을지로 지붕들이 보이는 루프탑 카페.",
+    "phone": "02-2382-2554",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "5개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 638,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-01",
+    "name": "성수 해담화로",
+    "category": "restaurant",
+    "categoryLabel": "화로구이",
+    "location": {
+      "lat": 37.546288,
+      "lng": 127.056475
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 205",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.95,
+    "sourceCount": 6,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.54,
+    "price": {
+      "level": 3,
+      "avg": 35000,
+      "min": 24500,
+      "max": 52500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "화로 삼겹",
+        "된장찌개"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean_bbq",
+      "reservable": true,
+      "private_room": true,
+      "parking": true,
+      "parking_type": "onsite",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": true
+    },
+    "atmosphere": [
+      "lively",
+      "trendy"
+    ],
+    "atmosphereScores": {
+      "lively": 0.85,
+      "trendy": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "성수 화로구이 맛집. 룸과 주차가 된다.",
+    "phone": "02-2395-2665",
+    "reservationChannels": [
+      "external",
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": true,
+      "basis": [
+        "6개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 675,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-02",
+    "name": "성수 국밥 연구소",
+    "category": "restaurant",
+    "categoryLabel": "국밥",
+    "location": {
+      "lat": 37.5446,
+      "lng": 127.057399
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 212",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.88,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.9,
+    "price": {
+      "level": 1,
+      "avg": 10000,
+      "min": 7000,
+      "max": 15000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "맑은 국밥",
+        "수육"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 2
+    },
+    "serviceAttributes": {
+      "venue_subtype": "gukbap_soup",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": true
+    },
+    "atmosphere": [
+      "clean"
+    ],
+    "atmosphereScores": {
+      "clean": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "깔끔한 공장형 인테리어의 국밥집. 국물이 맑다.",
+    "phone": "02-2408-2776",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 712,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-03",
+    "name": "뚝섬 칼국수",
+    "category": "restaurant",
+    "categoryLabel": "칼국수",
+    "location": {
+      "lat": 37.542405,
+      "lng": 127.054693
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 219",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.81,
+    "sourceCount": 4,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.78,
+    "price": {
+      "level": 1,
+      "avg": 9000,
+      "min": 6300,
+      "max": 13500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "닭칼국수",
+        "보쌈"
+      ]
+    },
+    "nearestStation": {
+      "station": "뚝섬",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "noodles",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "traditional",
+      "cozy"
+    ],
+    "atmosphereScores": {
+      "traditional": 0.85,
+      "cozy": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "뚝섬역 앞 오래된 칼국수집. 닭 육수가 순하다.",
+    "phone": "02-2421-2887",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": {
+      "certified": true,
+      "label": "백년가게"
+    },
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "4개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 749,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-04",
+    "name": "성수 소바",
+    "category": "restaurant",
+    "categoryLabel": "소바",
+    "location": {
+      "lat": 37.546307,
+      "lng": 127.051972
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 226",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.74,
+    "sourceCount": 5,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.66,
+    "price": {
+      "level": 2,
+      "avg": 14000,
+      "min": 9800,
+      "max": 21000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "냉소바",
+        "온소바"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 5
+    },
+    "serviceAttributes": {
+      "venue_subtype": "noodles",
+      "reservable": true,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet",
+      "clean"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85,
+      "clean": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "조용한 카운터석 소바집. 담백한 국물.",
+    "phone": "02-2434-2998",
+    "reservationChannels": [
+      "yumi",
+      "phone"
+    ],
+    "yumiReservable": true,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": true,
+      "basis": [
+        "5개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 786,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-05",
+    "name": "성수 오트 카페",
+    "category": "cafe",
+    "categoryLabel": "카페",
+    "location": {
+      "lat": 37.543774,
+      "lng": 127.056574
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 233",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.67,
+    "sourceCount": 6,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.54,
+    "price": {
+      "level": 2,
+      "avg": 7000,
+      "min": 4900,
+      "max": 10500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "오트 라떼",
+        "비건 스콘"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 2
+    },
+    "serviceAttributes": {
+      "venue_subtype": "coffee",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [
+        "coffee",
+        "dessert",
+        "vegan"
+      ],
+      "dietary": {
+        "vegan_options": true
+      },
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "trendy",
+      "spacious"
+    ],
+    "atmosphereScores": {
+      "trendy": 0.85,
+      "spacious": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "넓은 공장 개조 카페. 비건 디저트가 있다.",
+    "phone": "02-2447-3109",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "6개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 823,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-06",
+    "name": "공장 브루어리",
+    "category": "restaurant",
+    "categoryLabel": "펍",
+    "location": {
+      "lat": 37.543678,
+      "lng": 127.052506
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 240",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.95,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.9,
+    "price": {
+      "level": 2,
+      "avg": 20000,
+      "min": 14000,
+      "max": 30000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "수제 맥주",
+        "피시앤칩스"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean",
+      "reservable": false,
+      "private_room": false,
+      "parking": true,
+      "parking_type": "nearby",
+      "serves": [
+        "alcohol"
+      ],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "lively",
+      "spacious"
+    ],
+    "atmosphereScores": {
+      "lively": 0.85,
+      "spacious": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "양조장을 겸한 펍. 저녁엔 붐빈다.",
+    "phone": "02-2460-3220",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 860,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-07",
+    "name": "성수 한정식",
+    "category": "restaurant",
+    "categoryLabel": "한정식",
+    "location": {
+      "lat": 37.547697,
+      "lng": 127.058977
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 247",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.88,
+    "sourceCount": 4,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.78,
+    "price": {
+      "level": 3,
+      "avg": 38000,
+      "min": 26600,
+      "max": 57000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "정식 코스",
+        "보리굴비"
+      ]
+    },
+    "nearestStation": {
+      "station": "서울숲",
+      "walkMin": 6
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean",
+      "reservable": true,
+      "private_room": true,
+      "parking": true,
+      "parking_type": "valet",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet",
+      "traditional"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85,
+      "traditional": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "조용한 룸 한정식. 지친 일행과 천천히 쉬어 가기 좋다.",
+    "phone": "02-2473-3331",
+    "reservationChannels": [
+      "external",
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": true,
+      "basis": [
+        "4개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 897,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-08",
+    "name": "성수 브런치 하우스",
+    "category": "restaurant",
+    "categoryLabel": "브런치",
+    "location": {
+      "lat": 37.546389,
+      "lng": 127.054397
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 254",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.81,
+    "sourceCount": 5,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.66,
+    "price": {
+      "level": 2,
+      "avg": 19000,
+      "min": 13300,
+      "max": 28500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "에그 베네딕트",
+        "버섯 파스타"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "italian",
+      "reservable": true,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {
+        "vegetarian_options": true
+      },
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "cozy",
+      "trendy"
+    ],
+    "atmosphereScores": {
+      "cozy": 0.85,
+      "trendy": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "아늑한 브런치 식당. 채식 메뉴가 있다.",
+    "phone": "02-2486-3442",
+    "reservationChannels": [
+      "yumi",
+      "phone"
+    ],
+    "yumiReservable": true,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "5개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 934,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-09",
+    "name": "서울숲 샐러드",
+    "category": "restaurant",
+    "categoryLabel": "샐러드",
+    "location": {
+      "lat": 37.543555,
+      "lng": 127.05932
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 261",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.74,
+    "sourceCount": 6,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.54,
+    "price": {
+      "level": 1,
+      "avg": 11000,
+      "min": 7699,
+      "max": 16500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "곡물 샐러드",
+        "두부 포케"
+      ]
+    },
+    "nearestStation": {
+      "station": "서울숲",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {
+        "vegan_options": true,
+        "vegetarian_options": true
+      },
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "clean",
+      "quiet"
+    ],
+    "atmosphereScores": {
+      "clean": 0.85,
+      "quiet": 0.75
+    },
+    "closureSignal": null,
+    "aiSummary": "가벼운 샐러드와 포케. 속이 부담스러울 때 좋다.",
+    "phone": "02-2499-3553",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "6개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 971,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-10",
+    "name": "성수 분식",
+    "category": "restaurant",
+    "categoryLabel": "분식",
+    "location": {
+      "lat": 37.543792,
+      "lng": 127.0557
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 268",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.67,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.9,
+    "price": {
+      "level": 1,
+      "avg": 7000,
+      "min": 4900,
+      "max": 10500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "떡볶이",
+        "김밥"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 1
+    },
+    "serviceAttributes": {
+      "venue_subtype": "korean",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": true
+    },
+    "atmosphere": [
+      "lively"
+    ],
+    "atmosphereScores": {
+      "lively": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "저렴하고 빠른 분식집.",
+    "phone": "02-2512-3664",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": false,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": true,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 1008,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-11",
+    "name": "성수 중화",
+    "category": "restaurant",
+    "categoryLabel": "중식",
+    "location": {
+      "lat": 37.545858,
+      "lng": 127.058447
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 275",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.95,
+    "sourceCount": 4,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.78,
+    "price": {
+      "level": 2,
+      "avg": 17000,
+      "min": 11900,
+      "max": 25500
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "짬뽕",
+        "깐풍기"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "chinese",
+      "reservable": true,
+      "private_room": true,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "spacious"
+    ],
+    "atmosphereScores": {
+      "spacious": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "룸이 있는 중식당. 단체 식사에 편하다.",
+    "phone": "02-2525-3775",
+    "reservationChannels": [
+      "external",
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "4개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 1045,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-12",
+    "name": "성수 곰탕",
+    "category": "restaurant",
+    "categoryLabel": "곰탕",
+    "location": {
+      "lat": 37.5446,
+      "lng": 127.053321
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 282",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.88,
+    "sourceCount": 5,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.66,
+    "price": {
+      "level": 1,
+      "avg": 12000,
+      "min": 8400,
+      "max": 18000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "곰탕",
+        "도가니탕"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "gukbap_soup",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet"
+    ],
+    "atmosphereScores": {
+      "quiet": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "맑은 곰탕 한 그릇. 조용하고 담백하다.",
+    "phone": "02-2538-3886",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": false,
+      "basis": [
+        "5개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 1082,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "11:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ss-13",
+    "name": "성수 이자카야",
+    "category": "restaurant",
+    "categoryLabel": "이자카야",
+    "location": {
+      "lat": 37.542188,
+      "lng": 127.057456
+    },
+    "address": {
+      "road": "서울 성동구 성수이로 289",
+      "jibun": null
+    },
+    "regionCode": "1120069000",
+    "confidence": 0.81,
+    "sourceCount": 6,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": false,
+      "reason": "영업 전"
+    },
+    "freshnessScore": 0.54,
+    "price": {
+      "level": 3,
+      "avg": 30000,
+      "min": 21000,
+      "max": 45000
+    },
+    "menuSummary": {
+      "count": 6,
+      "items": [
+        "사시미",
+        "오뎅탕"
+      ]
+    },
+    "nearestStation": {
+      "station": "성수",
+      "walkMin": 4
+    },
+    "serviceAttributes": {
+      "venue_subtype": "japanese",
+      "reservable": true,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "cozy"
+    ],
+    "atmosphereScores": {
+      "cozy": 0.85
+    },
+    "closureSignal": null,
+    "aiSummary": "저녁에만 여는 이자카야. 지금은 영업 전.",
+    "phone": "02-2551-3997",
+    "reservationChannels": [
+      "external",
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": false,
+      "regulars_favorite": true,
+      "basis": [
+        "6개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 1119,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "17:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "17:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "17:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "17:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "17:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "17:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "17:00",
+        "close": "23:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  },
+  {
+    "id": "mock-ej-16",
+    "name": "을지 찻집",
+    "category": "cafe",
+    "categoryLabel": "전통찻집",
+    "location": {
+      "lat": 37.565501,
+      "lng": 126.988931
+    },
+    "address": {
+      "road": "서울 중구 을지로 211",
+      "jibun": null
+    },
+    "regionCode": "1114060500",
+    "confidence": 0.88,
+    "sourceCount": 3,
+    "possiblyClosed": false,
+    "lastSeenAt": "2026-10-01T09:00:00+09:00",
+    "openNow": {
+      "open": true,
+      "reason": "open"
+    },
+    "freshnessScore": 0.86,
+    "price": {
+      "level": 1,
+      "avg": 7000,
+      "min": 5000,
+      "max": 9000
+    },
+    "menuSummary": {
+      "count": 9,
+      "items": [
+        "대추차",
+        "생강차",
+        "약과"
+      ]
+    },
+    "nearestStation": {
+      "station": "을지로3가",
+      "walkMin": 3
+    },
+    "serviceAttributes": {
+      "venue_subtype": "traditional_tea",
+      "reservable": false,
+      "private_room": false,
+      "parking": false,
+      "parking_type": "none",
+      "serves": [
+        "dessert"
+      ],
+      "dietary": {},
+      "waiting_expected": false
+    },
+    "atmosphere": [
+      "quiet",
+      "traditional"
+    ],
+    "atmosphereScores": {
+      "quiet": 8.5,
+      "traditional": 8.0
+    },
+    "closureSignal": null,
+    "aiSummary": "따뜻한 대추차와 생강차가 속을 편하게 해 주는 조용한 찻집.",
+    "phone": "02-2271-3311",
+    "reservationChannels": [
+      "phone"
+    ],
+    "yumiReservable": false,
+    "legacy": null,
+    "reputation": {
+      "cross_source_confirmed": true,
+      "sample_size": "rich",
+      "recently_active": true,
+      "regulars_favorite": false,
+      "basis": [
+        "3개 지도 소스에서 같은 곳으로 확인됐어요"
+      ],
+      "caveats": []
+    },
+    "reviewCount": 1156,
+    "businessHours": [
+      {
+        "day": "mon",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "tue",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "wed",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "thu",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "fri",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sat",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      },
+      {
+        "day": "sun",
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false,
+        "lastOrder": null
+      }
+    ]
+  }
+]
